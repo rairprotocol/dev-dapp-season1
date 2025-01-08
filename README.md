@@ -30,6 +30,6 @@ RAIRprotocol is a Dapp building engine. By completing the initial 8 tasks you'll
 
 From there the sky is the limit to build your own Dapp. Or join a team to help them build their dapps. 
 
-* RAIR-SDK: Simple abstracted 
+* RAIR-SDK: Simple abstracted software development kit to interact with our underlying APIs 
 * RAIR-Dapp: Mono-repo with full underlying backend source code
 
