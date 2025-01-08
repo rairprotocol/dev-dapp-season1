@@ -1,4 +1,4 @@
-![Banner](/rair-infra/assets/img/banner.webp)
+![Banner](/https://github.com/rairprotocol/dev-dapp-s1/blob/main/devdapp-assets/devdapp.png)
 [![RAIRmarket](https://img.shields.io/badge/RAIR-market-C67FD1)](https://rair.market)
 [![RAIRprotocol](https://img.shields.io/badge/RAIR-protocol-C67FD1)](https://rairprotocol.org)
 ![License](https://img.shields.io/badge/License-Apache2.0-yellow)
@@ -26,7 +26,7 @@ Our community is where we post the important announcements first, and where you 
 
 RAIRprotocol is a Dapp building engine. By completing the initial 8 tasks you'll earn tokens and learn how to deploy a working Dapp! 
 
-![initial-tasks](https://hackmd.io/_uploads/Bk-bFz2LJg.png)
+![initial-tasks](https://github.com/rairprotocol/dev-dapp-s1/blob/main/devdapp-assets/initial-tasks.png))
 
 From there the sky is the limit to build your own Dapp. Or join a team to help them build their dapps. 
 
