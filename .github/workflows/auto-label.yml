@@ -18,11 +18,20 @@ jobs:
       - uses: Renato66/auto-label@v3
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
+          
+      # Step 3: Fetch updated issue details
+      - id: get_issue
+        uses: octokit/request-action@v2.x
+        with:
+          route: GET /repos/${{ github.repository }}/issues/${{ github.event.issue.number }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       #Check if a label was added
       - id: check_labels
         run: |
-          if [ "${{ github.event.issue.labels }}" = "[]" ]; then
+          echo "Labels: ${{ steps.get_issue.outputs.data }}"
+          LABELS_COUNT=$(echo '${{ steps.get_issue.outputs.data }}' | jq '.labels | length')
+          if [ "$LABELS_COUNT" -eq 0 ]; then
             echo "labels_set=false" >> $GITHUB_ENV
           else
             echo "labels_set=true" >> $GITHUB_ENV
