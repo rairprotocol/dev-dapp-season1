@@ -19,8 +19,18 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
 
+      #Check if a label was added
+      - id: check_labels
+        run: |
+          if [ "${{ github.event.issue.labels }}" = "[]" ]; then
+            echo "labels_set=false" >> $GITHUB_ENV
+          else
+            echo "labels_set=true" >> $GITHUB_ENV
+          fi
+
       #Close the issue    
-      - uses: octokit/request-action@v2.x
+      - if: env.labels_set == 'true'
+        uses: octokit/request-action@v2.x
         with:
           route: PATCH /repos/${{ github.repository }}/issues/${{ github.event.issue.number }}
           headers: '{"accept":"application/vnd.github+json"}'
