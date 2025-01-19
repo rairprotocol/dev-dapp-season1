@@ -6,12 +6,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    
       #Checkout Repo
       - uses: actions/checkout@v4
         with:
           sparse-checkout: |
             .github/workflows/auto-label.json5
           sparse-checkout-cone-mode: false
+          
       #Run Auto-labeler    
       - uses: Renato66/auto-label@v3
         with:
