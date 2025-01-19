@@ -6,11 +6,24 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      #Checkout Repo
       - uses: actions/checkout@v4
         with:
           sparse-checkout: |
             .github/workflows/auto-label.json5
           sparse-checkout-cone-mode: false
+      #Run Auto-labeler    
       - uses: Renato66/auto-label@v3
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+      #Close the issue    
+      - uses: octokit/request-action@v2.x
+        with:
+          route: PATCH /repos/${{ github.repository }}/issues/${{ github.event.issue.number }}
+          headers: '{"accept":"application/vnd.github+json"}'
+          data: |
+            {
+              "state": "closed"
+            }
+          token: ${{ secrets.GITHUB_TOKEN }}
