@@ -1,0 +1,13 @@
+{
+  labelsSynonyms: {
+    Entered: ['I agree to the rules - let's play!']
+  },
+  labelsNotAllowed: [
+    'documentation',
+    'duplicate',
+    'good first issue',
+    'help wanted',
+    'invalid'
+  ],
+  ignoreComments: true
+}
