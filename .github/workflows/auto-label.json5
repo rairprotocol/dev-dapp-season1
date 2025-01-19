@@ -1,6 +1,6 @@
 {
   labelsSynonyms: {
-    Entered: ['I agree to the rules - let's play!']
+    Entered: ["I agree to the rules - let's play!"]
   },
   labelsNotAllowed: [
     'documentation',
