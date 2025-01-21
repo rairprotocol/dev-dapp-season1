@@ -25,6 +25,15 @@ jobs:
         with:
           route: GET /repos/${{ github.repository }}/issues/${{ github.event.issue.number }}
           token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Debug JSON Output
+        run: |
+          echo "Raw JSON Output:"
+          echo "${{ steps.get_issue.outputs.data }}"
+          if [ -z "${{ steps.get_issue.outputs.data }}" ]; then
+            echo "Error: No data received from the get_issue step."
+            exit 1
+          fi
 
       #Check if a label was added
       - id: check_labels
