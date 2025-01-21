@@ -33,7 +33,7 @@ jobs:
       - name: Get Label Count
         id: get_label_count
         run: |
-          LABELS_COUNT=$(echo "${{ steps.get_issue.outputs.data }}" | jq '.labels | length')
+          LABELS_COUNT=$(echo "${{ steps.get_issue.outputs.data }}" | yq '.labels | length')
           echo $LABELS_COUNT
 
       # Check labels added isnt 0
