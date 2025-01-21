@@ -33,8 +33,7 @@ jobs:
       - name: Get Label Count
         id: get_label_count
         run: |
-          CLEAN_JSON=$(echo "${{ steps.get_issue.outputs.data }}" | tr -d '\000-\037') 
-          LABELS_COUNT=$(echo "${{ $CLEAN_JSON }}" | jq '.labels | length')
+          LABELS_COUNT=$(echo "${{ steps.get_issue.outputs.data }}" | jq '.labels | length')
       
       - name: Check Label Count
         id: Check Label Count
