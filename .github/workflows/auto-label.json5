@@ -11,4 +11,5 @@
     'invalid'
   ],
   ignoreComments: true
+  includeTitle: false
 }
