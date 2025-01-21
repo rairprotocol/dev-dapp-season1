@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-      #Checkout Repo
+      # Checkout Repo
       - name: Checkout Repo
         uses: actions/checkout@v4
         with:
@@ -15,13 +15,13 @@ jobs:
             .github/workflows/auto-label.json5
           sparse-checkout-cone-mode: false
           
-      #Run Auto-labeler    
+      # Run Auto-labeler    
       - name: Assign Labels
         uses: Renato66/auto-label@v3
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           
-      # Step 3: Fetch updated issue details
+      # Fetch updated issue details
       - name: Fetch Updated Issue Details
         id: get_issue
         uses: octokit/request-action@v2.x
@@ -29,19 +29,23 @@ jobs:
           route: GET /repos/${{ github.repository }}/issues/${{ github.event.issue.number }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      #Check if a label was added
-      - name: Check Label Count
-        id: check_labels
+      # Check if a label was added
+      - name: Get Label Count
+        id: get_label_count
         run: |
-          echo "${{ steps.get_issue.outputs.data }}"
-          LABELS_COUNT=$(echo "${{ steps.get_issue.outputs.data }}" | tr -d '\000-\037' | jq '.labels | length')
+          CLEAN_JSON=$(echo "${{ steps.get_issue.outputs.data }}" | tr -d '\000-\037') 
+          LABELS_COUNT=$(echo "${{ $CLEAN_JSON }}" | jq '.labels | length')
+      
+      - name: Check Label Count
+        id: Check Label Count
+        run: |
           if [ "$LABELS_COUNT" -eq 0 ]; then
-            echo "labels_set=false" >> $GITHUB_ENV
+          echo "labels_set=false" >> $GITHUB_ENV
           else
             echo "labels_set=true" >> $GITHUB_ENV
           fi
 
-      #Close the issue    
+      # Close the issue    
       - name: Close Issue
         if: env.labels_set == 'true'
         uses: octokit/request-action@v2.x
