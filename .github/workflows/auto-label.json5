@@ -10,6 +10,6 @@
     'help wanted',
     'invalid'
   ],
-  ignoreComments: true
+  ignoreComments: true,
   includeTitle: false
 }
