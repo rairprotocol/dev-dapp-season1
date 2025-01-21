@@ -29,7 +29,7 @@ jobs:
       #Check if a label was added
       - id: check_labels
         run: |
-          LABELS_COUNT=$(echo "${{ steps.get_issue.outputs.data }}" | jq '.labels | length')
+          LABELS_COUNT=$(echo "${{ steps.get_issue.outputs.data }}" | tr -d '\000-\037' | jq '.labels | length')
           if [ "$LABELS_COUNT" -eq 0 ]; then
             echo "labels_set=false" >> $GITHUB_ENV
           else
