@@ -8,35 +8,30 @@ jobs:
     steps:
     
       #Checkout Repo
-      - uses: actions/checkout@v4
+      - name: Checkout Repo
+        uses: actions/checkout@v4
         with:
           sparse-checkout: |
             .github/workflows/auto-label.json5
           sparse-checkout-cone-mode: false
           
       #Run Auto-labeler    
-      - uses: Renato66/auto-label@v3
+      - name: Assign Labels
+        uses: Renato66/auto-label@v3
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           
       # Step 3: Fetch updated issue details
-      - id: get_issue
+      - name: Fetch Updated Issue Details
+        id: get_issue
         uses: octokit/request-action@v2.x
         with:
           route: GET /repos/${{ github.repository }}/issues/${{ github.event.issue.number }}
           token: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: Debug JSON Output
-        run: |
-          echo "Raw JSON Output:"
-          echo "${{ steps.get_issue.outputs.data }}"
-          if [ -z "${{ steps.get_issue.outputs.data }}" ]; then
-            echo "Error: No data received from the get_issue step."
-            exit 1
-          fi
 
       #Check if a label was added
-      - id: check_labels
+      - name: Check Label Count
+        id: check_labels
         run: |
           echo "${{ steps.get_issue.outputs.data }}"
           LABELS_COUNT=$(echo "${{ steps.get_issue.outputs.data }}" | tr -d '\000-\037' | jq '.labels | length')
@@ -47,7 +42,8 @@ jobs:
           fi
 
       #Close the issue    
-      - if: env.labels_set == 'true'
+      - name: Close Issue
+        if: env.labels_set == 'true'
         uses: octokit/request-action@v2.x
         with:
           route: PATCH /repos/${{ github.repository }}/issues/${{ github.event.issue.number }}
