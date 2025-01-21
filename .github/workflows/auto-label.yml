@@ -29,12 +29,13 @@ jobs:
           route: GET /repos/${{ github.repository }}/issues/${{ github.event.issue.number }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      # Check if a label was added
+      # Count new labels
       - name: Get Label Count
         id: get_label_count
         run: |
-          LABELS_COUNT=$(echo "${{ steps.get_issue.outputs.data }}" | jq '.labels | length')
-      
+          LABELS_COUNT=$(echo '${{ steps.get_issue.outputs.data }}' | jq '.labels | length')
+
+      # Check labels added isnt 0
       - name: Check Label Count
         id: check_label_count
         run: |
