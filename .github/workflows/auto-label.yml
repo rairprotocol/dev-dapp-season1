@@ -30,18 +30,20 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       # Count new labels
-      - name: Get Label Count
-        id: get_label_count
+      - name: Save JSON to file
         run: |
-          echo "${{ steps.get_issue.outputs.data }}" | sed -E 's#(https?://[^,{} \n]+)#"\1"#g' > issue_data.json
+          echo "${{ steps.get_issue.outputs.data }}" > issue_data.json
           cat issue_data.json
-          LABELS_COUNT=$(jq '.labels | length' issue_data.json)
-        #echo $LABELS_COUNT
+
+      - name: Validate JSON
+        run: |
+          jq empty issue_data.json
 
       # Check labels added isnt 0
       - name: Check Label Count
         id: check_label_count
         run: |
+          LABELS_COUNT=$(jq '.labels | length' issue_data.json)
           if [ "$LABELS_COUNT" -eq 0 ]; then
           echo "labels_set=false" >> $GITHUB_ENV
           else
