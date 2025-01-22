@@ -1,4 +1,4 @@
-.name: Labeling new issue
+name: Labeling new issue
 on:
   issues:
     types: ['opened']
@@ -42,6 +42,7 @@ jobs:
       - name: Check Label Count
         id: check_label_count
         run: |
+          echo "Labels count is: $LABELS_COUNT"
           if [ "$LABELS_COUNT" -gt 0 ]; then
           echo "labels_set=true" >> $GITHUB_ENV
           else
