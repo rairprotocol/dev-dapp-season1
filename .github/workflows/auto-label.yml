@@ -34,7 +34,6 @@ jobs:
         id: get_label_count
         run: |
           echo "${{ steps.get_issue.outputs.data }}" > issue_data.json
-          sed -E 's/([^{}:,\s]+):/\1":/' issue_data.json
           cat issue_data.json
           LABELS_COUNT=$(jq '.labels | length' issue_data.json)
         #echo $LABELS_COUNT
