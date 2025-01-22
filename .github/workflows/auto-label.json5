@@ -1,7 +1,6 @@
 {
   labelsSynonyms: {
-    Entered: ['I agree to the rules'],
-    Eliminated: ['https://rootscan.io/tx/0x267c71ac118a84520974d8bb673e9ebb76cec3189a882b8619326614ff3cb48f']
+    Entered: ['Submit an issue that follows the guidelines']
   },
   labelsNotAllowed: [
     'documentation',
