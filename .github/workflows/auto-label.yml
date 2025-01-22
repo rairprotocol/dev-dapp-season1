@@ -39,7 +39,7 @@ jobs:
       - name: Check Label Count
         id: check_label_count
         run: |
-          LABELS_COUNT=$(jq '(try .labels | map(.name) | length) catch 0' issue_data.json)
+          LABELS_COUNT=$(jq '(try .labels | map(.name) | length // 0)' issue_data.json)
           if [ "$LABELS_COUNT" -eq 0 ]; then
           echo "labels_set=false" >> $GITHUB_ENV
           else
