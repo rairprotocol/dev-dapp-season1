@@ -27,7 +27,6 @@ jobs:
         uses: octokit/request-action@v2.x
         with:
           route: GET /repos/${{ github.repository }}/issues/${{ github.event.issue.number }}
-          mediaType: '{"format":"json"}'
           token: ${{ secrets.GITHUB_TOKEN }}
 
       # Count new labels
@@ -35,6 +34,7 @@ jobs:
         id: get_label_count
         run: |
           echo "${{ steps.get_issue.outputs.data }}" > issue_data.json
+          sed -E 's/([^{}:,\s]+):/\1":/' raw_issue.json
           cat issue_data.json
           LABELS_COUNT=$(jq '.labels | length' issue_data.json)
         #echo $LABELS_COUNT
