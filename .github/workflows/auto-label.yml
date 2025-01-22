@@ -36,7 +36,7 @@ jobs:
           response=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
           "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/labels")
           LABELS_COUNT=$(echo "$response" | jq length)
-          echo "LABELS_COUNT=$LABELS_COUNT"
+          echo "LABELS_COUNT=$LABELS_COUNT" >> $GITHUB_ENV
 
       # Check label count
       - name: Check Label Count
