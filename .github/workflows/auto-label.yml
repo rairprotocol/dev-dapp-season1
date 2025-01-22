@@ -42,10 +42,10 @@ jobs:
       - name: Check Label Count
         id: check_label_count
         run: |
-          if [ "$LABELS_COUNT" -eq 0 ]; then
-          echo "labels_set=false" >> $GITHUB_ENV
+          if [ "$LABELS_COUNT" -gt 0 ]; then
+          echo "labels_set=true" >> $GITHUB_ENV
           else
-            echo "labels_set=true" >> $GITHUB_ENV
+            echo "labels_set=false" >> $GITHUB_ENV
           fi
           echo "labels_set is: ${{ env.labels_set }}"
 
