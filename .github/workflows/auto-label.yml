@@ -33,7 +33,7 @@ jobs:
       - name: Get Label Count
         id: get_label_count
         run: |
-          echo "${{ steps.get_issue.outputs.data }}" > issue_data.json
+          echo "${{ steps.get_issue.outputs.data }}" | sed -E 's#(https?://[^,{} \n]+)#"\1"#g' > issue_data.json
           cat issue_data.json
           LABELS_COUNT=$(jq '.labels | length' issue_data.json)
         #echo $LABELS_COUNT
