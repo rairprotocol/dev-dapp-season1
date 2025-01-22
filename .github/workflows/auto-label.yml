@@ -35,9 +35,9 @@ jobs:
         id: get_label_count
         run: |
           echo "${{ steps.get_issue.outputs.data }}" > issue_data.json
-          cat issue_data.json
-          LABELS_COUNT=$(jq '.labels | length' issue_data.json)
-          echo $LABELS_COUNT
+          jq empty issue_data.json
+        #LABELS_COUNT=$(jq '.labels | length' issue_data.json)
+        #echo $LABELS_COUNT
 
       # Check labels added isnt 0
       - name: Check Label Count
