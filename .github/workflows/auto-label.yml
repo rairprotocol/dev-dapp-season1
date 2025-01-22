@@ -48,7 +48,7 @@ jobs:
           else
             echo "labels_set=false" >> $GITHUB_ENV
           fi
-          echo "labels_set is: ${{ env.labels_set }}"
+          echo "labels_set is: $env.labels_set"
 
       # Close the issue    
       - name: Close Issue
