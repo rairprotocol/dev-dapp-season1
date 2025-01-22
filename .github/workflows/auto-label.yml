@@ -28,7 +28,8 @@ jobs:
         with:
           route: GET /repos/${{ github.repository }}/issues/${{ github.event.issue.number }}
           token: ${{ secrets.GITHUB_TOKEN }}
-
+     
+      # Get Labels Count
       - name: Get labels from issue
         id: get_labels
         run: |
@@ -46,6 +47,7 @@ jobs:
           else
             echo "labels_set=true" >> $GITHUB_ENV
           fi
+          echo "labels_set is: ${{ env.labels_set }}"
 
       # Close the issue    
       - name: Close Issue
