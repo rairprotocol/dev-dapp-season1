@@ -44,7 +44,7 @@ jobs:
         run: |
           echo "Labels count is: $LABELS_COUNT"
           if [ "$LABELS_COUNT" -gt 0 ]; then
-          echo "labels_set=true" >> $GITHUB_ENV
+            echo "labels_set=true" >> $GITHUB_ENV
           else
             echo "labels_set=false" >> $GITHUB_ENV
           fi
