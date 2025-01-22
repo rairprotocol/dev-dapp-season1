@@ -35,15 +35,11 @@ jobs:
           echo "${{ steps.get_issue.outputs.data }}" > issue_data.json
           cat issue_data.json
 
-      - name: Validate JSON
-        run: |
-          jq -e empty issue_data.json
-
       # Check labels added isnt 0
       - name: Check Label Count
         id: check_label_count
         run: |
-          LABELS_COUNT=$(jq -e '.labels | length' issue_data.json)
+          LABELS_COUNT=$(jq 'try .labels | map(.name) | length catch 0' issue_data.json)
           if [ "$LABELS_COUNT" -eq 0 ]; then
           echo "labels_set=false" >> $GITHUB_ENV
           else
