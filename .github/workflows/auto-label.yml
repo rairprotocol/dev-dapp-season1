@@ -29,17 +29,18 @@ jobs:
           route: GET /repos/${{ github.repository }}/issues/${{ github.event.issue.number }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      # Count new labels
-      - name: Save JSON to file
+      - name: Get labels from issue
+        id: get_labels
         run: |
-          echo "${{ steps.get_issue.outputs.data }}" > issue_data.json
-          cat issue_data.json
+          response=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/labels")
+          LABELS_COUNT=$(echo "$response" | jq length)
+          echo "LABELS_COUNT=$LABELS_COUNT"
 
       # Check labels added isnt 0
       - name: Check Label Count
         id: check_label_count
         run: |
-          LABELS_COUNT=$LABELS_COUNT=$(jq '(try (.labels | map(.name) | length) catch 0' issue_data.json)
           if [ "$LABELS_COUNT" -eq 0 ]; then
           echo "labels_set=false" >> $GITHUB_ENV
           else
