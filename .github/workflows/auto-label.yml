@@ -48,6 +48,9 @@ jobs:
           else
             echo "labels_set=false" >> $GITHUB_ENV
           fi
+
+      - name: labelset
+        run: |
           echo "labels_set is: $LABELS_SET"
 
       # Close the issue    
