@@ -44,18 +44,18 @@ jobs:
         run: |
           echo "Labels count is: $LABELS_COUNT"
           if [ "$LABELS_COUNT" -gt 0 ]; then
-            echo "labels_set=true" >> $GITHUB_ENV
+            echo "LABELS_SET=true" >> $GITHUB_ENV
           else
-            echo "labels_set=false" >> $GITHUB_ENV
+            echo "LABELS_SET=false" >> $GITHUB_ENV
           fi
 
       - name: labelset
         run: |
-          echo "labels_set is: $LABELS_SET"
+          echo "LABELS_SET is: $LABELS_SET"
 
       # Close the issue    
       - name: Close Issue
-        if: ${{ env.labels_set == 'true' }}
+        if: ${{ env.LABELS_SET == 'true' }}
         uses: octokit/request-action@v2.x
         with:
           route: PATCH /repos/${{ github.repository }}/issues/${{ github.event.issue.number }}
