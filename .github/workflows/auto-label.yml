@@ -49,7 +49,7 @@ jobs:
             echo "LABELS_SET=false" >> $GITHUB_ENV
           fi
 
-      - name: labelset
+      - name: Debug-labelset
         run: |
           echo "LABELS_SET is: $LABELS_SET"
 
