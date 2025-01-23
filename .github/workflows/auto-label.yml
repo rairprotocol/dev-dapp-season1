@@ -35,7 +35,7 @@ jobs:
         run: |
           pwd
           ls -a
-          EXCLUDED_LABELS=$(cat .github/workflows/excluded_labels)
+          EXCLUDED_LABELS=$(cat /home/runner/work/dev-dapp-season1/dev-dapp-season1/.github/workflows/excluded_labels)
           LABELS_COUNT=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
             "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}" \
             | jq --argjson excluded "$EXCLUDED_LABELS" \
