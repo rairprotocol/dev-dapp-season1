@@ -29,8 +29,8 @@ jobs:
           route: GET /repos/${{ github.repository }}/issues/${{ github.event.issue.number }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      # Get Filtered Labels Count
-      - name: Get labels from issue and filter out excluded labels
+      # Get labels from issue and filter out excluded labels
+      - name: Get Filtered Label Count
         id: get_labels
         run: |
           LABELS_COUNT=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
