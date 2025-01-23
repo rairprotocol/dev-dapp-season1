@@ -11,4 +11,5 @@
   ],
   ignoreComments: true,
   includeTitle: false
+  failoverLabels: ['Unresolved']
 }
