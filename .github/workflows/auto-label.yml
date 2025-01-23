@@ -13,6 +13,7 @@ jobs:
         with:
           sparse-checkout: |
             .github/workflows/auto-label.json5
+            .github/workflows/excluded_labels.txt
           sparse-checkout-cone-mode: false
           
       # Run Auto-labeler    
