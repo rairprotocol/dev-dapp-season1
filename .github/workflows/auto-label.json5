@@ -10,6 +10,6 @@
     'invalid'
   ],
   ignoreComments: true,
-  includeTitle: false
+  includeTitle: false,
   failoverLabels: ['Unresolved']
 }
