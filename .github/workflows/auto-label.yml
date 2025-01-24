@@ -52,10 +52,6 @@ jobs:
             echo "LABELS_SET=false" >> $GITHUB_ENV
           fi
 
-      - name: Debug-labelset
-        run: |
-          echo "LABELS_SET is: $LABELS_SET"
-
       # Close the issue    
       - name: Close Issue
         if: ${{ env.LABELS_SET == 'true' }}
@@ -67,4 +63,12 @@ jobs:
             {
               "state": "closed"
             }
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }} 
+
+      - name: Comment Closed Issue
+        uses: wow-actions/auto-comment@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          issuesClosed: |
+            @{{ author }}
+            Your issue has been accepted and automatically closed. Please join our Discord (https://discord.gg/nxVB2M4rWq ) and stay tuned for updates so you can keep on earning! 
