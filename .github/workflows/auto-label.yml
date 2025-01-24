@@ -53,6 +53,7 @@ jobs:
 
       # Close the issue    
       - name: Close Issue
+        id: close_issue
         if: ${{ env.LABELS_SET == 'true' }}
         uses: octokit/request-action@v2.x
         with:
@@ -64,17 +65,15 @@ jobs:
             }
           token: ${{ secrets.GITHUB_TOKEN }} 
 
-      # Fetch updated issue details
-      - name: Fetch Updated Issue Details
+      # Comment Closed Issue
+      - name: Comment Closed Issue
+        if: ${{ steps.close_issue.outcome == 'success' }}
         uses: octokit/request-action@v2.x
         with:
-          route: GET /repos/${{ github.repository }}/issues/${{ github.event.issue.number }}
+          route: POST /repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments
+          headers: '{"accept":"application/vnd.github+json"}'
+          data: |
+            {
+              "body": "Your issue has been accepted and automatically closed. Please join our Discord (https://discord.gg/nxVB2M4rWq) and stay tuned for updates so you can keep on earning! "
+            }
           token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Comment Closed Issue
-        uses: wow-actions/auto-comment@v1
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          issuesClosed: |
-            @{{ author }}
-            Your issue has been accepted and automatically closed. Please join our Discord (https://discord.gg/nxVB2M4rWq) and stay tuned for updates so you can keep on earning! 
