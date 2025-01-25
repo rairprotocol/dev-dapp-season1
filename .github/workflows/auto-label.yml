@@ -24,9 +24,10 @@ jobs:
                 | jq -r '.body')
               if [ -z "$ISSUE_BODY" ] || [ "$ISSUE_BODY" == "null" ]; then
                 echo "HAS_TEXT=false" >> $GITHUB_ENV
-                curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+                curl -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+                  -H "Accept: application/vnd.github+json" \
                   "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/labels" \
-                  "labels[]=Unresolved"
+                  -d '{"labels":["Unresolved"]}'
               else
                 echo "HAS_TEXT=true" >> $GITHUB_ENV
               fi
