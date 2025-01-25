@@ -23,6 +23,7 @@ jobs:
              "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}" \
                 | jq -r '.body')
               if [ -z "$ISSUE_BODY" ] || [ "$ISSUE_BODY" == "null" ]; then
+                echo $ISSUE_BODY
                 echo "HAS_TEXT=false" >> $GITHUB_ENV
               else
                 echo "HAS_TEXT=true" >> $GITHUB_ENV
