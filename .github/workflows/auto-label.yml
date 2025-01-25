@@ -32,7 +32,7 @@ jobs:
                 echo "HAS_TEXT=true" >> $GITHUB_ENV
               fi
       
-      # Run Auto-labeler    
+      # Run Auto-labeler if theres body text to check
       - name: Assign Labels
         if: env.HAS_TEXT == 'true'
         uses: Renato66/auto-label@v3
