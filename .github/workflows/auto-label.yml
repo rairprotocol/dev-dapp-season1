@@ -16,15 +16,17 @@ jobs:
             .github/workflows/excluded_labels.txt
           sparse-checkout-cone-mode: false
 
-      # Check Issue Body has text
+      # Check Issue Body has text, set unresolved lavel if false
       - id: check_issue_body
         run: |
           ISSUE_BODY=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
              "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}" \
                 | jq -r '.body')
               if [ -z "$ISSUE_BODY" ] || [ "$ISSUE_BODY" == "null" ]; then
-                echo $ISSUE_BODY
                 echo "HAS_TEXT=false" >> $GITHUB_ENV
+                curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+                  "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/labels" \
+                  -f "labels[]=Unresolved"
               else
                 echo "HAS_TEXT=true" >> $GITHUB_ENV
               fi
