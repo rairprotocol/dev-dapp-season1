@@ -26,7 +26,7 @@ jobs:
                 echo "HAS_TEXT=false" >> $GITHUB_ENV
                 curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
                   "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/labels" \
-                  -f "labels[]=Unresolved"
+                  "labels[]=Unresolved"
               else
                 echo "HAS_TEXT=true" >> $GITHUB_ENV
               fi
