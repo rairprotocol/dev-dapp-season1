@@ -7,28 +7,29 @@
 
 # DevDapp Season 1
 
-Welcome to DevDapp! The GitHub Incentives Layer. With DevDapp you can earn tokens for contributing to our open-source! Connect your GitHub. Track Contributions. Earn RAIR + partner tokens. 
+Welcome to DevDapp! The GitHub Incentives Layer built on RAIRprotocol. With DevDapp you can earn tokens for contributing to our open-source! Connect your GitHub. Track Contributions. Earn RAIR + partner tokens. 
 
-# Rewards
+# How DevDapp Works
+RAIRprotocol is a Dapp building engine. By completing the initial 8 tasks in DevDapp you'll earn tokens and learn how to deploy a working Dapp! 
 
-Season 1 rewards are 50,000,000 RAIR + bonus partner tokens!! Season 1 starts now through May 2025. Join early to have more time to complete tasks.
-
-# Discord 
-
-‼️ **[Come join us on Discord! ](https://discord.gg/nxVB2M4rWq)** ‼️
-
-Our community is where we post the important announcements first, and where you can get real- time support. 
-
-# How-To
-RAIRprotocol is a Dapp building engine. By completing the initial 8 tasks you'll earn tokens and learn how to deploy a working Dapp! 
-
-![initial-tasks](https://github.com/rairprotocol/dev-dapp-s1/blob/main/devdapp-assets/initial-tasks.png))
+![initial-tasks](https://github.com/rairprotocol/dev-dapp-s1/blob/main/devdapp-assets/initial-tasks.png)
 
 From there the sky is the limit to build your own Dapp. Or join a team to help them build their dapps. 
 
 * RAIR-SDK: Simple abstracted software development kit to interact with our underlying APIs 
 * RAIR-Dapp: Mono-repo with full underlying backend source code
 
+# Rewards
+
+Season 1 rewards are 50,000,000 RAIR + bonus partner tokens!! Season 1 starts now through May 2025. Join early to have more time to complete tasks.
+
+
 # Help
 
 If you're having trouble with a particular task, please check out the [Season 1 Tasks](https://github.com/rairprotocol/dev-dapp-season1/tree/main/Season%201%20Tasks) folder above for helpful information regarding your current task.
+
+# Discord 
+
+‼️ **[Come join us on Discord! ](https://discord.gg/nxVB2M4rWq)** ‼️
+
+Our community is where we post the important announcements first, and where you can get real-time support. 
