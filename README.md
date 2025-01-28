@@ -19,11 +19,7 @@ Season 1 rewards are 50,000,000 RAIR + bonus partner tokens!! Season 1 starts no
 
 Our community is where we post the important announcements first, and where you can get real- time support. 
 
-# How-to
-
-*We'll update this readme less often than the Discord so please join us!*
-
-
+# How-To
 RAIRprotocol is a Dapp building engine. By completing the initial 8 tasks you'll earn tokens and learn how to deploy a working Dapp! 
 
 ![initial-tasks](https://github.com/rairprotocol/dev-dapp-s1/blob/main/devdapp-assets/initial-tasks.png))
@@ -33,3 +29,6 @@ From there the sky is the limit to build your own Dapp. Or join a team to help t
 * RAIR-SDK: Simple abstracted software development kit to interact with our underlying APIs 
 * RAIR-Dapp: Mono-repo with full underlying backend source code
 
+# Help
+
+If you're having trouble with a particular task, please check out the [Season 1 Tasks](https://github.com/rairprotocol/dev-dapp-season1/tree/main/Season%201%20Tasks) folder above for helpful information regarding your current task.
