@@ -3,7 +3,7 @@ This initial task is for those who are new to GitHub and Ethereum.\
 \
 This task is a twist on the previous one (see [1. Github Tutorial](https://github.com/rairprotocol/dev-dapp-season1/tree/main/Season%201%20Tasks/1.%20GitHub%20Tutorial) if you have not completed it yet). Again we are asking you to create an issue, but this time we want you to delve into Ethereum Improvement Proposals (EIP). RAIRprotocol utilizes its own Smart Contracts deployed to the Ethereum network for transactions; as such it behooves one to be a little familiar with the standards of the Ethereum protocol. Who knows, maybe you'll be inspired to start writing your own Smart Contracts after seeing just whats possible! Even better, RAIRprotocol allows for deployment of custom Smart Contracts, meaning you dont have to use ours, you can deploy your own Smart Contracts to the RAIR dApp you're learning to build!
 
-# Steps
+## Steps
 1. Navigate to https://eips.ethereum.org/ and take a look around. EIPs are organized by type, so find one which is most interesting to you.
 2. Navigate to the [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab in the dev-dapp-season1 repository
 3. Click "New Issue" (the green button).
