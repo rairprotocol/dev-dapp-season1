@@ -3,7 +3,7 @@ This initial task is for those who are new to GitHub.\
 \
 We use GitHub issues to track your progress so it is important to learn how to create one. Issues are how you to plan, discuss, and track work in GitHub, so you will be doing this quite often when developing on an Open-Source project. In this first task all we are requesting is for you to create a new issue and copy-paste a block of text which we provide you.
 
-# Steps
+## Steps
 1. Navigate to the [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab in the dev-dapp-season1 repository
 2. Click "New Issue" (the green button).
 3. Add a title to your issue. In this case your title should read "1. Github Tutorial"
