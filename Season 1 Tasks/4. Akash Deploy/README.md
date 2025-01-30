@@ -69,7 +69,7 @@ Upon completion, your task will be validated and if it is correct, you will be a
 
 24. After you have been verified, you can terminate your deployment since its no good when its not functional. On the navigation bar click "Deployments"
    <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/24.png" width="25%"/>
-25. You'll see your new deployment. On the far right click "..." and then delete your deployment. 
+25. You'll see your new deployment. On the far right click "..." and then close your deployment. 
    <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/25.png" width="75%"/>
    
 Congratulations! You now know how to deploy on Akash! This was just a taste of things to come. In a later task you will create a full deployment and have a chance to modify the code to create your own dApp. Continue to the next task to learn how to deploy your own smart contracts to the Etherum Network.
