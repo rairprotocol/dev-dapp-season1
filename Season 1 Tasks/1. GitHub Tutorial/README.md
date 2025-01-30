@@ -8,7 +8,6 @@ We use GitHub issues to track your progress so it is important to learn how to c
 2. Click "New Issue" (the green button).
 3. Add a title to your issue. In this case your title should read "1. Github Tutorial"
 4. Read first, then copy-paste the text below in the body of your new issue.
-5. Click "Create" (the green button)
 
 ```
 I agree to the rules - let's play!
@@ -23,6 +22,8 @@ This first task will introduce you to our game mechanics
 
 4. Points = Real $$ including cash, partner tokens and our token (RAIR) at the end of the season
 ```
+5. Click "Create" (the green button)
+
 Upon completion, your task will be validated and if it is correct, you will be assigned the "Entered" label. If there is an issue, you will see the "Unresolved" label, this means there is a problem that needs to be corrected. Edit your issue and follow the guidelines more closely until you receive your "Entered" label. Do not create multiple issues for the same task. If you dont see your issue, it means it has been validated and closed. Verify this by setting the sort settings to show closed issues.
 
 Congratulations! You have just created your first issue and are officially entered into DevDapp. Continue with the next task to earn levels and climb the leaderboard to earn your share of the rewards!
