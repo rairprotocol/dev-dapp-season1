@@ -1,16 +1,17 @@
 ## 4. Akash Deploy
-Ok so we got the easy stuff out of the way, now its time to take your skills up a notch! If you are familiar with cloud computing, you probably know all about the enterprise services provided by Google, AWS, IBM, Oracle, etc. These services are great but are quite costly, so for the new or aspiring user their offerings may be too much. This is where [Akash Network](https://akash.network/) comes into play. Akash is a decentralized, distributed cloud provider where you pay for compute services using tokens. We will be using this service to deploy a fully functional RAIR node which is yours to explore, modify, and extend to your hearts desire! The best part is you dont need a credit card to get going! Akash provides free tokens to get started so it wont cost you anything to complete this task! 
+Ok so we got the easy stuff out of the way, now its time to take your skills up a notch! If you are familiar with cloud computing, you probably know all about the enterprise services provided by Google, AWS, IBM, Oracle, etc. These services are great but are quite costly, so for the new or aspiring user their offerings may be too much. This is where [Akash Network](https://akash.network/) comes into play. Akash is a decentralized, distributed cloud provider where you pay for discreet compute services using tokens. We will be using this service to deploy a single micro-service from the RAIR suite so you can get used to how Akash works. The best part is making a simple deployment on Akash is totally free! 
 
 ## Background
-In cloud computing, deployment refers to the process of making an application, service, or infrastructure available in a cloud environment. The RAIR dApp utilizes a micro-services archetecture comprised of 5 separate services which are deployed in a cluster formation and seamlessely interact with each other to create the full environment. These services are as followed:
+In cloud computing, deployment refers to the process of making an application, service, or infrastructure available in a cloud environment. The RAIR dApp utilizes a micro-services archetecture comprised of 6 separate services which are deployed in a cluster formation and seamlessely interact with each other to create the full environment. These services are as followed:
 
 1. RAIR-node - The central component which links and utilizes all the other services.
 2. RAIR-front - The frontend component which is what you see when you access the app through your browser.
 3. RAIR-sync - The synchronization engine which manages communication with the blockchain.
 4. RAIR-redis - For session management.
 5. RAIR-stream - The media component which manages our custom Web3 streaming service.
+6. RAIR-DB - Mongo database.
 
-Configuring all of these services to deploy is beyond the scope of this task but thats ok! We have preconfigured a deployment for you so getting your RAIR dApp up and running is as simple as the click of a button. Don't let this discourage you from digging in and seeing how it all works, but for now we'll do all the heavy lifting.
+In this task we will be deploying the "RAIR-front" service only.
 
 ## Steps
 1. Head to the [Akash Console](https://console.akash.network/).
@@ -36,21 +37,43 @@ Configuring all of these services to deploy is beyond the scope of this task but
     <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/12.png" width="75%"/>
 10. This leaves just the "RAIR-front" service.
     <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/14.png" width="75%"/>
-5. Navigate to the [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab in the dev-dapp-season1 repository
-6. Click "New Issue" (the green button).
-7. Add a title to your issue. In this case your title should read "2. Favorite EIP"
-8. Copy-paste the text below in the body of your new issue, and edit it according to our requests.
-9. Click "Create" (the green button)
+11. Now click "Create Deployment".
+   <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/15.png" width="25%"/>
+12. Verify the deployment.
+   <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/16.png" width="50%"/>
+13. Wait for a bid to become available.
+   <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/17.png" width="75%"/>
+14. On the far right of your bid, click the "Select" radio button.
+    <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/18.png" width="25%"/>
+15. Click "Accept Bid"
+   <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/19.png" width="25%"/>
+16. The deployment will attempt to run. In this case it will fail because we are not using the full production environment but thats ok! 
+   <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/20.png" width="75%"/>
+17. Click "Leases"
+   <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/21.png" width="25%"/>
+18. Locate the "URI" and copy this link to your clipboard. If you click it, you'll see an error but for now all we need is the URI.
+   <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/22.png" width="50%"/>
+   <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/23.png" width="50%"/>
+19. Head back to GitHub and navigate to the [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab in the dev-dapp-season1 repository.
 
+
+20. Click "New Issue" (the green button).
+21. Add a title to your issue. In this case your title should read "4. Akash Deploy".
+22. Copy-paste the text below in the body of your new issue, and edit it according to our requests.
 ```
-I checked out Ethereum Improvement Proposals! My Favorite new EIP is [Write EIP here].
-
-The reason I like this EIP is [Write a short description why, this helps us understand what features we might want to implement in the future to our own smart contracts!]
+I deployed on Akash! My URI is [Paste URI here].
 ```
-Upon completion, your task will be validated and if it is correct, you will be assigned the "Favorite EIP" label. If there is an issue, you will see the "Unresolved" label, this means there is a problem that needs to be corrected. Edit your issue and follow the guidelines more closely until you receive your "Favorite EIP" label. Do not create multiple issues for the same task. If you dont see your issue, it means it has been validated and closed. Verify this by setting the sort settings to show closed issues.
+23. Click "Create" (the green button)
 
-Congratulations! Continue with the next task to earn levels and climb the leaderboard to earn your share of the rewards!
+Upon completion, your task will be validated and if it is correct, you will be assigned the "Akash Deployed" label. If there is an issue, you will see the "Unresolved" label, this means there is a problem that needs to be corrected. Edit your issue and follow the guidelines more closely until you receive your "Akash Deployed" label. Do not create multiple issues for the same task. If you dont see your issue, it means it has been validated and closed. Verify this by setting the sort settings to show closed issues.
+
+24. After you have been verified, you can terminate your deployment since its no good when its not functional. On the navigation bar click "Deployments"
+   <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/24.png" width="25%"/>
+25. You'll see your new deployment. On the far right click "..." and then delete your deployment. 
+   <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/25.png" width="75%"/>
+   
+Congratulations! You now know how to deploy on Akash! This was just a taste of things to come. In a later task you will create a full deployment and have a chance to modify the code to create your own dApp. Continue to the next task to learn how to deploy your own smart contracts to the Etherum Network.
 
 ## Recommended Reading 
-[Ethereum Improvement Proposals- Creating an Issue](https://eips.ethereum.org/)\
-[Introduction to Smart Contracts](https://ethereum.org/en/developers/docs/smart-contracts/)
+[Akash Docs](https://akash.network/docs/)\
+
