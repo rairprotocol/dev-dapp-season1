@@ -14,12 +14,15 @@ Configuring all of these services to deploy is beyond the scope of this task but
 
 ## Steps
 1. Head to the [Akash Console](https://console.akash.network/)
-2. Click the "Connect Wallet" button. Select Keplr, and install the Keplr wallet into your browser and if you dont have it, create a new wallet.
-3. Navigate to the [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab in the dev-dapp-season1 repository
-4. Click "New Issue" (the green button).
-5. Add a title to your issue. In this case your title should read "2. Favorite EIP"
-6. Copy-paste the text below in the body of your new issue, and edit it according to our requests.
-7. Click "Create" (the green button)
+2. At the top of the page click "Start Trial"
+   ![1](https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/01.png)
+   
+4. ![1](https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/02.png)
+5. Navigate to the [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab in the dev-dapp-season1 repository
+6. Click "New Issue" (the green button).
+7. Add a title to your issue. In this case your title should read "2. Favorite EIP"
+8. Copy-paste the text below in the body of your new issue, and edit it according to our requests.
+9. Click "Create" (the green button)
 
 ```
 I checked out Ethereum Improvement Proposals! My Favorite new EIP is [Write EIP here].
