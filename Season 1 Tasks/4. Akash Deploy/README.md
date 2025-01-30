@@ -13,11 +13,19 @@ In cloud computing, deployment refers to the process of making an application, s
 Configuring all of these services to deploy is beyond the scope of this task but thats ok! We have preconfigured a deployment for you so getting your RAIR dApp up and running is as simple as the click of a button. Don't let this discourage you from digging in and seeing how it all works, but for now we'll do all the heavy lifting.
 
 ## Steps
-1. Head to the [Akash Console](https://console.akash.network/)
-2. At the top of the page click "Start Trial"
-   ![1](https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/01.png)
-   
-4. ![1](https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/02.png)
+1. Head to the [Akash Console](https://console.akash.network/).
+2. At the top of the page click "Start Trial".\
+   <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/01.png" width="25%"/>
+3. You will receive temporary trial funds. 
+  <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/02.png" width="25%"/>
+4. On the left side of the page, click "Templates".
+   <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/03.png" width="25%"/>
+5. In "Filter Templates" click "Business".
+   <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/04.png" width="25%"/>
+6. Click "RAIR-Dapp".
+   <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/05.png" width="25%"/>
+7. This will take you to an info page telling you about the deployment. Next to "RAIR-Dapp" click "Deploy".
+   <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/06.png" width="25%"/>
 5. Navigate to the [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab in the dev-dapp-season1 repository
 6. Click "New Issue" (the green button).
 7. Add a title to your issue. In this case your title should read "2. Favorite EIP"
