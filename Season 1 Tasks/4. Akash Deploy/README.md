@@ -75,5 +75,5 @@ Upon completion, your task will be validated and if it is correct, you will be a
 Congratulations! You now know how to deploy on Akash! This was just a taste of things to come. In a later task you will create a full deployment and have a chance to modify the code to create your own dApp. Continue to the next task to learn how to deploy your own smart contracts to the Etherum Network.
 
 ## Recommended Reading 
-[Akash Docs](https://akash.network/docs/)\
+[Akash Docs](https://akash.network/docs/)
 
