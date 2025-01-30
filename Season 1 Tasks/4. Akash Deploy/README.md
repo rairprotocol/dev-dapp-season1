@@ -24,8 +24,18 @@ Configuring all of these services to deploy is beyond the scope of this task but
    <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/04.png" width="25%"/>
 6. Click "RAIR-Dapp".
    <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/05.png" width="25%"/>
-7. This will take you to an info page telling you about the deployment. Next to "RAIR-Dapp" click "Deploy".
+7. This will take you to an info page telling you about the deployment. To the right of "RAIR-Dapp" click "Deploy".
    <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/06.png" width="25%"/>
+8. Inside the "Create Deployment" menu, click "Builder".
+   <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/07.png" width="25%"/>
+9. Our production deployment is too big for the trial, so we need to pare it down. In this task we are just going to deploy the "RAIR-front" microservice, so locate the other services and delete them from the deployment by clicking the trash icon on the far right.
+    <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/08.png" width="75%"/>
+    <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/09.png" width="75%"/>
+    <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/10.png" width="75%"/>
+    <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/11.png" width="75%"/>
+    <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/12.png" width="75%"/>
+10. This leaves just the "RAIR-front" service.
+    <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/14.png" width="75%"/>
 5. Navigate to the [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab in the dev-dapp-season1 repository
 6. Click "New Issue" (the green button).
 7. Add a title to your issue. In this case your title should read "2. Favorite EIP"
