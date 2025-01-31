@@ -1,14 +1,17 @@
-## 2. Favorite EIP
-This initial task is for those who are new to GitHub and Ethereum.\
-\
-This task is a twist on the previous one (see [1. Github Tutorial](https://github.com/rairprotocol/dev-dapp-season1/tree/main/Season%201%20Tasks/1.%20GitHub%20Tutorial) if you have not completed it yet). Again we are asking you to create an issue, but this time we want you to delve into Ethereum Improvement Proposals (EIP). RAIRprotocol utilizes its own Smart Contracts deployed to the Ethereum network for transactions; as such it behooves one to be a little familiar with the standards of the Ethereum protocol. Who knows, maybe you'll be inspired to start writing your own Smart Contracts after seeing just whats possible! Even better, RAIRprotocol allows for deployment of custom Smart Contracts, meaning you dont have to use ours, you can deploy your own Smart Contracts to the RAIR dApp you're learning to build!
+## 5. EVM Deploy
 
 ## Steps
-1. Navigate to https://eips.ethereum.org/ and take a look around. EIPs are organized by type, so find one which is most interesting to you.
-2. Navigate to the [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab in the dev-dapp-season1 repository
-3. Click "New Issue" (the green button).
-4. Add a title to your issue. In this case your title should read "2. Favorite EIP"
-5. Copy-paste the text below in the body of your new issue, and edit it according to our requests.
+1. Download the [RAIR-Solidity](https://github.com/rairprotocol/rair-solidity/tree/main) repository.
+2. Install [Node Version Manager](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating). If it doesnt run after installing, follow the troubleshooting steps in the documentation.
+3. From inside the RAIR-Solidity repository, navigate to ```diamond-contracts```.
+4. Edit ```.nvmrc``` and decrement ```v21.2.0``` to ```v20```. Save the file.
+5. Run ```nvm install``` , then ```nvm use``` to read the ```.nvmrc``` file in the folder and install the appropriate Node version.
+6. Rename ```sample.env``` file to ```.env``` in the folder, fill all values (RPC endpoints, API keys, Private Key for the deployer account)
+7. To test the smart contracts use the command npm run test, this will compile all contracts and make sure the environment values are working correctly. (You may need to install 
+8. Navigate to the [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab in the dev-dapp-season1 repository
+9. Click "New Issue" (the green button).
+10. Add a title to your issue. In this case your title should read "2. Favorite EIP"
+11. Copy-paste the text below in the body of your new issue, and edit it according to our requests.
 ```
 I checked out Ethereum Improvement Proposals! My Favorite new EIP is [Write EIP here].
 
@@ -22,4 +25,4 @@ Congratulations! Continue with the next task to earn levels and climb the leader
 
 ## Recommended Reading 
 [Juan's Hardhat Guide for Deploying Smart Contracts](https://github.com/rairprotocol/rair-solidity/blob/main/GUIDE.MD)\
-[Introduction to Smart Contracts](https://ethereum.org/en/developers/docs/smart-contracts/)
+[Ethereum Virtual Machine (EVM)](https://ethereum.org/en/developers/docs/evm/)
