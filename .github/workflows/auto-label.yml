@@ -15,9 +15,8 @@ jobs:
           ref: main
           token: ${{ secrets.AUTO_LABELER_PAT}} # Use PAT or GITHUB_TOKEN with sufficient permissions
           sparse-checkout: |
-            .github/workflows/excluded_labels.txt
-            .github/workflows/auto-label.json5
-          sparse-checkout-cone-mode: false
+            .github/workflows
+          sparse-checkout-cone-mode: true
           path: dev-dapp-admin
 
       # Check Issue Body has text, set unresolved label if false
@@ -59,8 +58,7 @@ jobs:
       - name: Get Filtered Label Count
         id: get_labels
         run: |
-          cd dev-dapp-admin/.git
-          ls -a
+          git ls-tree -r main --name-only | grep '.github/workflows/excluded_labels.txt'
           EXCLUDED_LABELS=$(cat .github/workflows/excluded_labels.txt)
           LABELS_COUNT=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
             "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}" \
