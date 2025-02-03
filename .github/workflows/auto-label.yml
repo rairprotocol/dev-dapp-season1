@@ -11,7 +11,7 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v4
         with:
-          repository: dev-dapp-season1
+          repository: rairprotocol/dev-dapp-season1
           token: ${{ secrets.AUTO_GITHUB_TOKEN}} # Use PAT or GITHUB_TOKEN with sufficient permissions
           sparse-checkout: |
             .github/workflows
