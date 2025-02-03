@@ -58,6 +58,7 @@ jobs:
       - name: Get Filtered Label Count
         id: get_labels
         run: |
+          cd dev-dapp-admin
           git ls-tree -r main --name-only | grep '.github/workflows/excluded_labels.txt'
           EXCLUDED_LABELS=$(cat dev-dapp-admin/.github/workflows/excluded_labels.txt)
           LABELS_COUNT=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
