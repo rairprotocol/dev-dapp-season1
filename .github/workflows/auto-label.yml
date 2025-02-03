@@ -18,7 +18,7 @@ jobs:
           sparse-checkout-cone-mode: true
 
       - name: Debug Checkout
-        run: ls -R 
+        run: ls -a -R 
 
       # Check Issue Body has text, set unresolved label if false
       - name: Check Issue Body
