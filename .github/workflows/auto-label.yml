@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: rairprotocol/dev-dapp-admin
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT }}
           path: private-repo
           sparse-checkout: |
             .github/workflows/
