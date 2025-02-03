@@ -11,10 +11,12 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v4
         with:
+          repository: rairtech/dev-dapp-admin
+          token: ${{ secrets.AUTO_LABELER_PAT}} # Use PAT or GITHUB_TOKEN with sufficient permissions
           sparse-checkout: |
-            .github/workflows/auto-label.json5
-            .github/workflows/excluded_labels.txt
+            .github/workflows/
           sparse-checkout-cone-mode: false
+          path: dev-dapp-admin
 
       # Check Issue Body has text, set unresolved label if false
       - name: Check Issue Body
