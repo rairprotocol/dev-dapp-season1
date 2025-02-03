@@ -58,7 +58,7 @@ jobs:
       - name: Get Filtered Label Count
         id: get_labels
         run: |
-          EXCLUDED_LABELS=$(cat .github/workflows/excluded_labels.txt)
+          EXCLUDED_LABELS=$(cat dev-dapp-admin/.github/workflows/excluded_labels.txt)
           LABELS_COUNT=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
             "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}" \
             | jq --argjson excluded "$EXCLUDED_LABELS" \
