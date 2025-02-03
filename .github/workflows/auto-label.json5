@@ -1,7 +1,7 @@
 {
   labelsSynonyms: {
     Entered: ['Submit an issue that follows the guidelines'],
-    'Akash Deployed': ['I deployed on Akash! My URI is'],
+    "Akash Deployed": ['I deployed on Akash! My URI is'],
     'Sponsored' - Akash: ['I deployed on Akash! My URI is']
   },
   labelsNotAllowed: [
