@@ -7,13 +7,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-      # Checkout Repo
-      - name: Checkout Repo
+      # Checkout DevDapp Admin Repo
+      - name: Checkout DevDapp Admin Repo
         uses: actions/checkout@v4
         with:
+          repository: rairprotocol/dev-dapp-admin
+          token: ${{ secrets.PAT_TOKEN }}
+          path: private-repo
           sparse-checkout: |
-            .github/workflows/auto-label.json5
-            .github/workflows/excluded_labels.txt
+            .github/workflows/
           sparse-checkout-cone-mode: false
 
       # Check Issue Body has text, set unresolved label if false
