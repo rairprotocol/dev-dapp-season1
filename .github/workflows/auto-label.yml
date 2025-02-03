@@ -11,7 +11,7 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v4
         with:
-          repository: rairtech/dev-dapp-admin
+          repository: rairprotocol/dev-dapp-admin
           ref: main
           token: ${{ secrets.AUTO_LABELER_PAT}} # Use PAT or GITHUB_TOKEN with sufficient permissions
           sparse-checkout: |
