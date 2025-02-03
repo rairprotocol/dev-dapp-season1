@@ -19,6 +19,9 @@ jobs:
           sparse-checkout-cone-mode: true
           path: dev-dapp-admin
 
+      - name: Debug Checkout
+        run: ls -R dev-dapp-admin
+
       # Check Issue Body has text, set unresolved label if false
       - name: Check Issue Body
         id: check_issue_body
@@ -58,8 +61,6 @@ jobs:
       - name: Get Filtered Label Count
         id: get_labels
         run: |
-          cd dev-dapp-admin
-          git ls-tree -r main --name-only | grep '.github/workflows/excluded_labels.txt'
           EXCLUDED_LABELS=$(cat dev-dapp-admin/.github/workflows/excluded_labels.txt)
           LABELS_COUNT=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
             "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}" \
