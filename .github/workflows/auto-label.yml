@@ -15,7 +15,8 @@ jobs:
           ref: main
           token: ${{ secrets.AUTO_LABELER_PAT}} # Use PAT or GITHUB_TOKEN with sufficient permissions
           sparse-checkout: |
-            .github/workflows/
+            .github/workflows/excluded_labels.txt
+            .github/workflows/auto-label.json5
           sparse-checkout-cone-mode: false
           path: dev-dapp-admin
 
