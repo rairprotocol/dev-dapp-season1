@@ -42,14 +42,18 @@ jobs:
               else
                 echo "HAS_TEXT=true" >> $GITHUB_ENV
               fi
+
       
+      - name: Link Auto-Label Config
+        run: |
+          ln -s $GITHUB_WORKSPACE/devdappcom/.github/workflows/auto-label.json5 $GITHUB_WORKSPACE/.github/workflows/auto-label.json5
+
       # Run Auto-labeler if theres body text to check
       - name: Assign Labels
         if: env.HAS_TEXT == 'true'
         uses: Renato66/auto-label@v3
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          config-path: dev-dapp-admin/.github/workflows/auto-label.json5
           
       # Fetch updated issue details
       - name: Fetch Updated Issue Details
