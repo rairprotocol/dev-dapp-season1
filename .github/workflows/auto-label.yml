@@ -6,29 +6,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-
-      # Checkout Public Repo
-      - name: Checkout Public Repo
-        uses: actions/checkout@v4
-        with:
-          repository: rairprotocol/dev-dapp-season1
-          ref: main
-          sparse-checkout: |
-            .github/workflows
-          sparse-checkout-cone-mode: true
-          path: dev-dapp-season1
     
-      # Checkout Private Repo
+      # Checkout Repo
       - name: Checkout Repo
         uses: actions/checkout@v4
         with:
-          repository: devdappcom/dev-dapp-admin
-          token: ${{ secrets.AUTO_LABELER }} 
-          ref: main
           sparse-checkout: |
-            .github/workflows
-          sparse-checkout-cone-mode: true
-          path: dev-dapp-admin
+            .github/workflows/auto-label.json5
+            .github/workflows/excluded_labels.txt
+          sparse-checkout-cone-mode: false
 
       # Check Issue Body has text, set unresolved label if false
       - name: Check Issue Body
@@ -50,14 +36,7 @@ jobs:
               else
                 echo "HAS_TEXT=true" >> $GITHUB_ENV
               fi
-
       
-      - name: Link Auto-Label Config
-        run: |
-          ln -s $GITHUB_WORKSPACE/dev-dapp-admin/.github/workflows/auto-label.json5 \
-          $GITHUB_WORKSPACE/dev-dapp-season1/.github/workflows/auto-label.json5
-          ls -a -R $GITHUB_WORKSPACE/dev-dapp-season1/.github
-
       # Run Auto-labeler if theres body text to check
       - name: Assign Labels
         if: env.HAS_TEXT == 'true'
@@ -76,7 +55,7 @@ jobs:
       - name: Get Filtered Label Count
         id: get_labels
         run: |
-          EXCLUDED_LABELS=$(cat dev-dapp-admin/.github/workflows/excluded-labels.txt)
+          EXCLUDED_LABELS=$(cat .github/workflows/excluded_labels.txt)
           LABELS_COUNT=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
             "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}" \
             | jq --argjson excluded "$EXCLUDED_LABELS" \
