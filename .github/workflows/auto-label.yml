@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: devdappcom/dev-dapp-admin 
-          token: ${{ secrets.AUTO_LABELER }} # Use PAT or GITHUB_TOKEN with sufficient permissions
+          token: ${{ secrets.AUTO_LABELER }} 
           sparse-checkout: |
             .github/workflows
           sparse-checkout-cone-mode: true
