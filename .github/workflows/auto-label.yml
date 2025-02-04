@@ -96,6 +96,6 @@ jobs:
           headers: '{"accept":"application/vnd.github+json"}'
           data: |
             {
-              "body": "Your issue has been accepted and automatically closed. Please join our Discord (https://discord.gg/XHPtHTDy) and stay tuned for updates so you can keep on earning! "
+              "body": "Your issue has been accepted and automatically closed. Please join our Discord (https://discord.gg/XHPtHTDy)! Also head to DevDapp.com and log in to complete your profile! Stay tuned for updates so you can keep on earning! "
             }
           token: ${{ secrets.GITHUB_TOKEN }}
