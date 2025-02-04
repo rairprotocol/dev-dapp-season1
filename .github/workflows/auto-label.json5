@@ -1,9 +1,9 @@
 {
   labelsSynonyms: {
     'Entered': ['Submit an issue that follows the guidelines'],
-    'T-Shirt': ['T-Shirt'],
-    'USB Hub': ['USB Hub'],
-    'Cape': ['Cape'],
+    'DevDapp T-Shirt': ['T-Shirt'],
+    'DevDapp USB Hub': ['USB Hub'],
+    'DevDapp Cape': ['Cape'],
     'Akash Deployed': ['I deployed on Akash! My URI is'],
     'Sponsored - Akash': ['I deployed on Akash! My URI is'],
     'Sponsored - ETHDome': ['I want a DevDapp']
