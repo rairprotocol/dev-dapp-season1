@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: rairprotocol/dev-dapp-admin
-          token: ${{ secrets.AUTO_LABELER }} 
+          token: ${{ secrets.GITHUB_TOKEN }} 
           ref: main
           sparse-checkout: |
             .github/workflows
@@ -91,7 +91,7 @@ jobs:
             {
               "state": "closed"
             }
-          token: ${{ secrets.AUTO_LABELER }} 
+          token: ${{ secrets.GITHUB_TOKEN }} 
 
       # Comment Closed Issue
       - name: Comment Closed Issue
