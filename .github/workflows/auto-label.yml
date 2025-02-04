@@ -49,6 +49,7 @@ jobs:
         uses: Renato66/auto-label@v3
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
+          config-path: dev-dapp-admin/.github/workflows/auto-label.json5
           
       # Fetch updated issue details
       - name: Fetch Updated Issue Details
