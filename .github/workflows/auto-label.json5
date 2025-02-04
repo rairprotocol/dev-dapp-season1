@@ -1,16 +1,13 @@
 {
   labelsSynonyms: {
     'Entered': ['Submit an issue that follows the guidelines'],
+    'T-Shirt': ['T-Shirt'],
+    'USB Hub': ['USB Hub'],
+    'Cape': ['Cape'],
     'Akash Deployed': ['I deployed on Akash! My URI is'],
-    'Sponsored - Akash': ['I deployed on Akash! My URI is']
+    'Sponsored - Akash': ['I deployed on Akash! My URI is'],
+    'Sponsored - ETHDome': ['I want a DevDapp']
   },
-  labelsNotAllowed: [
-    'documentation',
-    'duplicate',
-    'good first issue',
-    'help wanted',
-    'invalid'
-  ],
   ignoreComments: true,
   includeTitle: false,
   failoverLabels: ['Unresolved']
