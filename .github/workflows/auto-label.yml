@@ -13,6 +13,7 @@ jobs:
         with:
           repository: devdappcom/dev-dapp-admin 
           token: ${{ secrets.AUTO_LABELER }} 
+          ref: main
           sparse-checkout: |
             .github/workflows
           sparse-checkout-cone-mode: true
