@@ -91,7 +91,7 @@ jobs:
             {
               "state": "closed"
             }
-          token: ${{ secrets.GITHUB_TOKEN }} 
+          token: ${{ secrets.AUTO_LABELER }} 
 
       # Comment Closed Issue
       - name: Comment Closed Issue
