@@ -26,9 +26,6 @@ jobs:
           sparse-checkout-cone-mode: true
           path: dev-dapp-admin
 
-      - name: Debug Checkout
-        run: ls -a -R 
-
       # Check Issue Body has text, set unresolved label if false
       - name: Check Issue Body
         id: check_issue_body
