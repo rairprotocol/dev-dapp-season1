@@ -17,10 +17,15 @@ Finally, since the theme of this years ETHDome is 'The Regenerate Superhero Hide
 2. Navigate to the [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab in the dev-dapp-season1 repository
 3. Click "New Issue" (the green button).
 4. Add a title to your issue. In this case your title should read "2. Merch Giveaway"
-5. Copy-paste the text below in the body of your new issue, and edit it with your single choice.
+5. Depending on your choice, copy-paste one of the lines below in the body of your new issue, and edit it with your single choice.
 ```
-I want a DevDapp [T-Shirt, USB Hub, or Cape]! 
-
+I want a DevDapp T-Shirt! 
+```
+```
+I want a DevDapp USB Hub! 
+```
+```
+I want a DevDapp Cape! 
 ```
 6. Click "Create" (the green button)
 
