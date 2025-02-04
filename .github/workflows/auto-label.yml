@@ -11,9 +11,8 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v4
         with:
-          repository: rairprotocol/dev-dapp-admin 
+          repository: rairprotocol/dev-dapp-admin
           token: ${{ secrets.GITHUB_TOKEN }} 
-          ref: main
           sparse-checkout: |
             .github/workflows
           sparse-checkout-cone-mode: true
