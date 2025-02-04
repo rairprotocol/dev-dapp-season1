@@ -52,6 +52,7 @@ jobs:
         run: |
           ln -s $GITHUB_WORKSPACE/dev-dapp-admin/.github/workflows/auto-label.json5 \
           $GITHUB_WORKSPACE/dev-dapp-season1/.github/workflows/auto-label.json5
+          ls -a -R $GITHUB_WORKSPACE/dev-dapp-season1/
 
       # Run Auto-labeler if theres body text to check
       - name: Assign Labels
