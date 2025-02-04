@@ -1,1 +1,1 @@
-["Manual Review", "Sponsored - Akash", "Sponsored - Futureverse", "Sponsored - GBM", "Sponsored - Sharp", "Sponsored - Soneium", "Sponsored - Stability Protocol", "Unresolved", "Warning"]
+["Manual Review", "Sponsored - Akash", "Sponsored - ETHDome", "Sponsored - Futureverse", "Sponsored - GBM", "Sponsored - Sharp", "Sponsored - Soneium", "Sponsored - Stability Protocol", "Unresolved", "Warning"]
