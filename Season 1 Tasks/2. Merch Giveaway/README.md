@@ -4,18 +4,20 @@ This year we are a very proud sponsor of the [ETHDome](https://ethdo.me/) at [ET
 ## Whats Up For Grabs?
 We have three items you can claim! The first is our DevDapp T-Shirt (in white or black). 
 ![Shirt1](https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/2.%20Merch%20Giveaway/Shirt1.png)
-![Shirt2](https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/2.%20Merch%20Giveaway/Shirt2.png)/
+![Shirt2](https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/2.%20Merch%20Giveaway/Shirt2.png)
+
 Next is a DevDapp branded USB C hub.
 [image]
+
 Finally, since the theme of this years ETHDome is 'The Regenerate Superhero Hideout', you (or someone you know) can be a Hero with your own DevDapp cape!
 [image]
 
 ## Steps
-1. Pick one(1) of the choices above that you would like to receive.
+1. Pick one(1) of the items above that you would like to receive.
 2. Navigate to the [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab in the dev-dapp-season1 repository
 3. Click "New Issue" (the green button).
 4. Add a title to your issue. In this case your title should read "2. Merch Giveaway"
-5. Copy-paste the text below in the body of your new issue, and edit it according to our requests.
+5. Copy-paste the text below in the body of your new issue, and edit it with your single choice.
 ```
 I want a DevDapp [T-Shirt, USB Hub, or Cape]! 
 
