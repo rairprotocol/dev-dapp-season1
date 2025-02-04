@@ -46,6 +46,7 @@ jobs:
       
       - name: Link Auto-Label Config
         run: |
+          ls -l $GITHUB_WORKSPACE/devdappcom/
           ln -s $GITHUB_WORKSPACE/devdappcom/dev-dapp-admin/.github/workflows/auto-label.json5 \
           $GITHUB_WORKSPACE/.github/workflows/auto-label.json5
 
