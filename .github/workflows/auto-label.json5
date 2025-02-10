@@ -5,8 +5,8 @@
     'Giveaway Entered': ['I want some DevDapp swag'],
     'Akash Deployed': ['I deployed on Akash! My URI is'],
     'Sponsored - Akash': ['I deployed on Akash! My URI is'],
-    'Sponsored - ETHDome': ['I'm going to ETHDenver'],
-    'Sponsored - HackIndia': ['I'm with HackIndia']
+    'Sponsored - ETHDome': ['Im going to ETHDenver'],
+    'Sponsored - HackIndia': ['Im with HackIndia']
   },
   ignoreComments: true,
   includeTitle: false,
