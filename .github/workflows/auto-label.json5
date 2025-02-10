@@ -1,12 +1,12 @@
 {
   labelsSynonyms: {
     'Entered': ['Submit an issue that follows the guidelines'],
-    'DevDapp T-Shirt': ['T-Shirt'],
-    'DevDapp USB Hub': ['USB Hub'],
-    'DevDapp Cape': ['Cape'],
+    'Raffle Entered': ['sign me up for the raffle'],
+    'Giveaway Entered': ['I want some DevDapp swag'],
     'Akash Deployed': ['I deployed on Akash! My URI is'],
     'Sponsored - Akash': ['I deployed on Akash! My URI is'],
-    'Sponsored - ETHDome': ['I want a DevDapp']
+    'Sponsored - ETHDome': ['I'm going to ETHDenver'],
+    'Sponsored - HackIndia': ['I'm with HackIndia']
   },
   ignoreComments: true,
   includeTitle: false,
