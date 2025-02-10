@@ -1,5 +1,15 @@
 ## 2. Merch Giveaway
-This year we are a very proud sponsor of the [ETHDome](https://ethdo.me/) at [ETHDenver](https://www.ethdenver.com/) February 23 - March 2, 2025 in Denver, Colorado. In celebration of this tremendous honor, we are going to be giving away free DevDapp merch to users who complete this task and attend the conference! Not attending? Thats ok! You still earn levels for completing this task and your choice will help us stock up on what you want for future giveaways.
+This year we are a very proud sponsor of the [ETHDome](https://ethdo.me/) at [ETHDenver](https://www.ethdenver.com/), and [HackIndia](https://hackindia.xyz/), India's Biggest Web3 & AI hackathon series. In celebration of this tremendous honor, we are going to be giving away free DevDapp merch to users who complete this task.
+
+There will be two different prize pools, one for attendees of EthDenver, and another for participants of HackIndia. Please pay attention to the rules so you sign up for the correct pool. 
+
+Not attending? Thats ok! You still earn levels for completing this task and your choice will help us stock up on what you want for future giveaways. Just fill out the task as if you were attending EthDenver.
+
+## EthDenver Participants
+Complete the task and receive the correct label on your issue. Then come find us at the EthDome during EthDenver and show us your issue (If it has been successfully completed it will be filed under "closed").
+
+## HackIndia Participants
+Due to distance, supplies will be limited so we are going to run a raffle for merch winners. Complete your task with the provided text below. 
 
 ## Whats Up For Grabs?
 We have three items you can claim! The first is our DevDapp T-Shirt (in white or black). 
@@ -13,19 +23,18 @@ Finally, since the theme of this years ETHDome is 'The Regenerate Superhero Hide
 [image]
 
 ## Steps
-1. Pick one(1) of the items above that you would like to receive.
-2. Navigate to the [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab in the dev-dapp-season1 repository
-3. Click "New Issue" (the green button).
-4. Add a title to your issue. In this case your title should read "2. Merch Giveaway"
-5. Depending on your choice, copy-paste one of the lines below in the body of your new issue.
+1. Navigate to the [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab in the dev-dapp-season1 repository
+2. Click "New Issue" (the green button).
+3. Add a title to your issue. In this case your title should read "2. Merch Giveaway"
+4. Depending on your attendance, copy-paste one of the lines below in the body of your new issue.
+
+For EthDenver Attendees:
 ```
-I want a DevDapp T-Shirt ! 
+Im going to ETHDenver, I want some DevDapp swag ! 
 ```
+For HackIndia Participants:
 ```
-I want a DevDapp USB Hub ! 
-```
-```
-I want a DevDapp Cape ! 
+Im with HackIndia, sign me up for the raffle ! 
 ```
 6. Click "Create" (the green button)
 
