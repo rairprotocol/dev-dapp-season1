@@ -6,10 +6,10 @@ There will be two different prize pools, one for attendees of EthDenver, and ano
 Not attending? Thats ok! You still earn levels for completing this task and your choice will help us stock up on what you want for future giveaways. Just fill out the task as if you were attending EthDenver.
 
 ## EthDenver Participants
-Complete the task and receive the correct label on your issue. Then come find us at the EthDome during EthDenver and show us your issue (If it has been successfully completed it will be filed under "closed").
+Complete the task and paste the text below to receive the correct label on your issue. Then come find us at the EthDome during EthDenver and show us your issue (If it has been successfully completed it will be filed under "closed").
 
 ## HackIndia Participants
-Due to distance, supplies will be limited so we are going to run a raffle for merch winners. Complete your task with the provided text below. 
+Due to distance, supplies will be limited so we are going to run a raffle for merch winners. Complete your task and paste the provided text below to receive the correct label on your issue. 
 
 ## Whats Up For Grabs?
 We have three items you can claim! The first is our DevDapp T-Shirt (in white or black). 
@@ -38,9 +38,8 @@ Im with HackIndia, sign me up for the raffle !
 ```
 6. Click "Create" (the green button)
 
-Upon completion, your task will be validated and if it is correct, you will be assigned the "DevDapp T-Shirt", "DevDapp USB Hub", or "DevDapp Cape" label. If there is an issue, you will see the "Unresolved" label, this means there is a problem that needs to be corrected. Edit your issue and follow the guidelines more closely until you receive your label. Do not create multiple issues for the same task. If you dont see your issue, it means it has been validated and closed. Verify this by setting the sort settings to show closed issues.
-
-7. Come find us at the ETHDome in Denver and show us your completed task and label to receive your Swag.
+Upon completion, your task will be validated and if it is correct, you will be assigned the "Giveaway Entered", or "Raffle Entered" label. If there is an issue, you will see the "Unresolved" label, this means there is a problem that needs to be corrected. Edit your issue and follow the guidelines more closely until you receive your label. Do not create multiple issues for the same task. If you dont see your issue, it means it has been validated and closed. Verify this by setting the sort settings to show closed issues.
 
 ## Recommended Reading 
 [ETHDome](https://ethdo.me/)
+[HackIndia](https://hackindia.xyz/)
