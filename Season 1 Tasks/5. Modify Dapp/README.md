@@ -15,6 +15,9 @@ Once you have Docker installed you'll next need a free Alchemy account to have a
 4. Activate the "Node API" service.
 5. You will be directed to your new app. On the top right of the page you'll see your API key. You'll need this later.
 
+### Metamask
+To connect to the blockchain and verify your deployment, you're gonna need Metamask as well. Metamask is a Web3 wallet that you use to make signatures on chain. It's also the easiest way to login to RAIR so go ahead and install that in your browser as an add-on. Make a new wallet if you dont already have one.
+
 ### VSCode
 If you already have a development environment of your own you can skip this step, but for those who dont you're gonna want to install an IDE(Integrated development environment) on your machine. IDEs are super helpful when working on large projects. They help you keep organized and provide a lot of functionality that will help in writing code easier. We recommend [VSCode](https://code.visualstudio.com/).
 
@@ -22,22 +25,27 @@ If you already have a development environment of your own you can skip this step
 Last but not least, you need the RAIR source code. Head to the [RAIR-Dapp](https://github.com/rairprotocol/rair-dapp) repository and download the code. There are many ways to do this but for the sake of simplicity we're just going to download the zip file to our machine, but you can also use git if you prefer. Once you have downloaded you can extract it to a location of your choice (preferably not the download directory). In your IDE, open the folder ```RAIR-Dapp-Main``` wherever you extracted it and youll see all the files. 
 
 ## Steps
-We first need to configure the deployment to use your new alchemy account. We will do this by creating a ```.env``` file which contains all the variables the app might need to access before deployment. These values are referenced from this file throughout the app so they dont have to be hard-coded into the source. 
+We first need to configure the deployment to use your new alchemy account. We will do this by creating two ```.env``` files which contain all the variables the app might need to access before deployment. These values are referenced from these files throughout the app so they dont have to be hard-coded into the source. 
 1. Locate the file in the ```Rair-Dapp-Main``` folder called ```.env.sample```
 2. Make a copy of this file called ```.env```
 3. Open ```.env``` and locate ```alchemy_api_key=```
 4. Paste your API key from the alchemy dashboard into ```alchemy_api_key=```
-Next you need to set up your RPC node. We'll use the one Alchemy gives you with your account. 
-5. On the dashboard, click on "Networks"
-6. Your Ethereum node should be listed at the top. Click copy to get the address.
-7. In your ```.env``` locate ```ethereum_mainnet_rpc=``` and paste in the address you just copied.
-8. Save your file.
-9. Open a terminal in VSCode. ```terminal>new terminal``` and from the repository root enter ```docker compose -f docker-compose.local-new.yml up -d```
-10. Wait for the deployment to build. (This can take several minutes)
-11. Navigate to the [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab in the dev-dapp-season1 repository
-12. Click "New Issue" (the green button).
-13. Add a title to your issue. In this case your title should read "1. Github Tutorial"
-14. Read first, then copy-paste the text below in the body of your new issue.
+5. Save your file.
+6. That takes care of the backend, now we need to do the same for the frontend. Go into the ```rair-front``` folder and do the same thing with the ```.env.sample``` file in there. You wont need to change anything in here though, just rename the copy ```.env```
+Deploy RAIR
+7. Head back to the project root, open a terminal in VSCode. ```terminal>new terminal``` and from the repository root input ```docker compose -f docker-compose.local-new.yml up -d```
+8. Wait for the deployment to build. (This can take several minutes). If you are using MacOS, there is a chance the build will fail due to a port conflict! Use [this guide](https://progressstory.com/tech/port-5000-already-in-use-macos-monterey-issue/) to free up the needed port.
+9. @if EVERYTHING IS PERFECT head to [http://localhost:8088/](http://localhost:8088/) where you will be everso kindly greeted by:
+11. Click the "Connect" button.
+12. Verify the transaction.
+13. And that's it! You have successfully deployed RAIR on your local machine!
+14. Pat yourself on the back.
+15. Take a drink of water.
+16. Now... There's still a task to finish if you want to progress in DevDapp.
+17. Navigate to the [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab in the dev-dapp-season1 repository
+18. Click "New Issue" (the green button).
+19. Add a title to your issue. In this case your title should read "5. Modify Dapp"
+20. Read first, then copy-paste the text below in the body of your new issue.
 
 ```
 
