@@ -93,7 +93,7 @@ I deployed RAIR successfully. My Alchemy RPC address is [RPC Address].
 ```
 5. Click "Create" (the green button)
 
-Upon completion, your task will be validated and if it is correct, you will be assigned the "Modify Dapp" label. If there is an issue, you will see the "Unresolved" label, this means there is a problem that needs to be corrected. Edit your issue and follow the guidelines more closely until you receive your "Modify Dapp" label. Do not create multiple issues for the same task. If you dont see your issue, it means it has been validated and closed. Verify this by setting the sort settings to show closed issues.
+Upon completion, your task will be validated and if it is correct, you will be assigned the "Modified Dapp" label. If there is an issue, you will see the "Unresolved" label, this means there is a problem that needs to be corrected. Edit your issue and follow the guidelines more closely until you receive your "Modified Dapp" label. Do not create multiple issues for the same task. If you dont see your issue, it means it has been validated and closed. Verify this by setting the sort settings to show closed issues.
 
 Congratulations! You have just successfully deployed your ownn modified RAIR Dapp! Feel free to poke around and see what interests you. Continue with the next task to earn levels and climb the leaderboard to earn your share of the rewards!
 
