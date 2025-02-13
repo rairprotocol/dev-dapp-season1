@@ -32,7 +32,7 @@ Once you have Docker installed you'll next need a free Alchemy account to have a
 <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/5.%20Modify%20Dapp/14.png" width="25%"/><img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/5.%20Modify%20Dapp/15.png" width="50%"/>
 
 ### Metamask
-To connect to the blockchain and verify your deployment, you're gonna need Metamask as well. Metamask is a Web3 wallet that you use to make signatures on chain. It's also the easiest way to login to RAIR so go ahead and install that in your browser as an add-on. Make a new wallet if you dont already have one.
+To connect to the blockchain and verify your deployment, you're gonna need Metamask. Metamask is a Web3 wallet that you use to make signatures on chain. It's also the easiest way to login to RAIR so go ahead and install that in your browser as an add-on. Make a new wallet if you dont already have one.
 
 ### VSCode
 If you already have a development environment of your own you can skip this step, but for those who dont you're gonna want to install an IDE(Integrated development environment) on your machine. IDEs are super helpful when working on large projects. They help you keep organized and provide a lot of functionality that will help in writing code easier. We recommend [VSCode](https://code.visualstudio.com/).
@@ -86,17 +86,18 @@ Deploy RAIR
 16. Navigate to the [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab in the dev-dapp-season1 repository
 17. Click "New Issue" (the green button).
 18. Add a title to your issue. In this case your title should read "5. Modify Dapp"
-19. Add 2 screenshots. One of your 
-
+19. Add a screenshot of your logged in wallet on the frontend.
+20. Finally copy-paste the text below and replace [RPC Address] with the address you recieved from Alchemy. (DO NOT POST YOUR API KEY)
 ```
-
+I deployed RAIR successfully. My Alchemy RPC address is [RPC Address].
 ```
 5. Click "Create" (the green button)
 
-Upon completion, your task will be validated and if it is correct, you will be assigned the "Entered" label. If there is an issue, you will see the "Unresolved" label, this means there is a problem that needs to be corrected. Edit your issue and follow the guidelines more closely until you receive your "Entered" label. Do not create multiple issues for the same task. If you dont see your issue, it means it has been validated and closed. Verify this by setting the sort settings to show closed issues.
+Upon completion, your task will be validated and if it is correct, you will be assigned the "Modify Dapp" label. If there is an issue, you will see the "Unresolved" label, this means there is a problem that needs to be corrected. Edit your issue and follow the guidelines more closely until you receive your "Modify Dapp" label. Do not create multiple issues for the same task. If you dont see your issue, it means it has been validated and closed. Verify this by setting the sort settings to show closed issues.
 
-Congratulations! You have just created your first issue and are officially entered into DevDapp. Continue with the next task to earn levels and climb the leaderboard to earn your share of the rewards!
+Congratulations! You have just successfully deployed your ownn modified RAIR Dapp! Feel free to poke around and see what interests you. Continue with the next task to earn levels and climb the leaderboard to earn your share of the rewards!
 
 ## Recommended Reading 
 [Docker - What is a Container?](https://www.docker.com/resources/what-container/)
+[Alchemy Docs](https://docs.alchemy.com/)
 
