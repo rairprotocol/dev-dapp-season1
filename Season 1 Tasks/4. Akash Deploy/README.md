@@ -41,7 +41,7 @@ In this task we will be deploying the "RAIR-front" service only.
    <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/15.png" width="25%"/>
 12. Verify the deployment.
    <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/16.png" width="50%"/>
-13. Wait for a bid to become available.
+13. Wait for a bid to become available. If you dont receive a bid, its because Akash trial servers are overloaded. You may have to try again later.
    <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/17.png" width="75%"/>
 14. On the far right of your bid, click the "Select" radio button.
     <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/18.png" width="25%"/>
