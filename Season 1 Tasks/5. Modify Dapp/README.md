@@ -25,7 +25,6 @@ Once you have Docker installed you'll next need a free Alchemy account to have a
 <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/5.%20Modify%20Dapp/11.png" width="25%"/>
 
 5. You will be directed to your new app. On the top right of the page you'll see your API key. You'll need this later.
-<img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/5.%20Modify%20Dapp/12.png" width="25%"/>
 
 6. Under "networks" you'll also see the address of your RPC node. You'll need this later as well.
 
