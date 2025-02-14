@@ -28,14 +28,19 @@ Setting up your profile is easy, you just add your email and a profile pic, as w
 8. Add your E-mail address as well as a profile picture.
 <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/3.%20Update%20Profile/8.png" width="50%"/>
 
-9. Add your experince from other projects you've worked on.
+9. (Optional) Add your experince from other projects you've worked on.
 
 <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/3.%20Update%20Profile/9.png" width="25%"/><img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/3.%20Update%20Profile/10.png" width="50%"/><img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/3.%20Update%20Profile/11.png" width="50%"/>
 
-10. And add references to back up your claims.
+10. (Optional) And add references to back up your claims.
 
 <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/3.%20Update%20Profile/12.png" width="25%"/><img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/3.%20Update%20Profile/13.png" width="50%"/><img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/3.%20Update%20Profile/14.png" width="50%"/>
 
+11. That's it! Now you just need to make an issue to prove your work.
+12. Navigate to the Issues tab in the dev-dapp-season1 repository
+13. Click "New Issue" (the green button).
+14. Add a title to your issue. In this case your title should read "3. Complete Profile"
+15. Include a screenshot of your comlpeted profile, and a link to your DevDapp profile. 
 
 Upon completion, your task will be validated and if it is correct, you will be assigned the "Completed Profile" label. If there is an issue, you will see the "Unresolved" label, this means there is a problem that needs to be corrected. Edit your issue and follow the guidelines more closely until you receive your "Completed Profile" label. Do not create multiple issues for the same task. If you dont see your issue, it means it has been validated and closed. Verify this by setting the sort settings to show closed issues.
 
