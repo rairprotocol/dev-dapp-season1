@@ -60,7 +60,7 @@ We first need to configure the deployment to use your new alchemy account. We wi
 5. Save your file.
 6. That takes care of the backend, now we need to do the same for the frontend. Go into the ```rair-front``` folder and do the same thing with the ```.env.sample``` file in there. You wont need to change anything in here though, just rename the copy ```.env```
 Deploy RAIR
-7. Head back to the project root, open a terminal in VSCode. ```terminal>new terminal``` and from the repository root input ```docker compose -f docker-compose.local-new.yml up -d```
+7. Head back to the project root, open a terminal in VSCode. ```terminal>new terminal``` and from the repository root input ```docker compose -f docker-compose.local-new.yml up```
 <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/5.%20Modify%20Dapp/18.png" width="75%"/>
 
 8. Wait for the deployment to build. (This can take 10-15 minutes the first time around while the containers build and the database syncs with the blockchain). If you are using MacOS, there is a chance the build will fail due to a port conflict! Use [this guide](https://progressstory.com/tech/port-5000-already-in-use-macos-monterey-issue/) to free up the needed port.
