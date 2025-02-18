@@ -63,7 +63,7 @@ Deploy RAIR
 7. Head back to the project root, open a terminal in VSCode. ```terminal>new terminal``` and from the repository root input ```docker compose -f docker-compose.local-new.yml up -d```
 <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/5.%20Modify%20Dapp/18.png" width="75%"/>
 
-8. Wait for the deployment to build. (This can take several minutes while the containers build and the database syncs with the blockchain). If you are using MacOS, there is a chance the build will fail due to a port conflict! Use [this guide](https://progressstory.com/tech/port-5000-already-in-use-macos-monterey-issue/) to free up the needed port.
+8. Wait for the deployment to build. (This can take 10-15 minutes the first time around while the containers build and the database syncs with the blockchain). If you are using MacOS, there is a chance the build will fail due to a port conflict! Use [this guide](https://progressstory.com/tech/port-5000-already-in-use-macos-monterey-issue/) to free up the needed port.
 <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/5.%20Modify%20Dapp/20.png" width="25%"/>
 
 9. If EVERYTHING IS PERFECT head to [http://localhost:8088/](http://localhost:8088/) where you will be everso kindly greeted by:
