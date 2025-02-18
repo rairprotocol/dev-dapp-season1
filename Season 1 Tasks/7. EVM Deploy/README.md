@@ -1,9 +1,15 @@
-## 5. EVM Deploy
+## 6. EVM Deploy
+
+## Pre-Configuration
+### Clone RAIR-Solidity Repository
+Head to [RAIR-Solidity](https://github.com/rairprotocol/rair-solidity) and download or clone(```gh repo clone rairprotocol/rair-solidity)``` the repository to your local machine. 
+### Install Node Version Manager(NVM)
+You'll need a specific version of NPM installed to run the test script. In order to do this we'll use [Node Version Manager](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating). If it doesnt run after installing, follow the troubleshooting steps in the documentation.
 
 ## Steps
-1. In this task you'll need
-2. Download the [RAIR-Solidity](https://github.com/rairprotocol/rair-solidity/tree/main) repository.
-3. Install [Node Version Manager](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating). If it doesnt run after installing, follow the troubleshooting steps in the documentation.
+1. 
+2. 
+3. 
 4. From inside the RAIR-Solidity repository, navigate to ```diamond-contracts```.
 5. Edit ```.nvmrc``` and decrement ```v21.2.0``` to ```v20```. Save the file.
 6. Run ```nvm install``` , then ```nvm use``` to read the ```.nvmrc``` file in the folder and install the appropriate Node version.
