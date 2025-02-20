@@ -1,21 +1,21 @@
 ## 6. EVM Deploy
 
 ## Pre-Configuration
-### Etherscan API Key
+### 1. Etherscan API Key
 Register on [Etherscan](https://etherscan.io/) to get an API key. You'll need this for your .env configuration.
-### CoinmarketCap API key
+### 2. CoinmarketCap API key
 Register on [CoinMarketCap](https://coinmarketcap.com/) to get an API key. You'll need this for your .env configuration.
-### Alchemy RPC Node
+### 3. Alchemy RPC Node
 If you did the last task you'll already have your free RPC node. If you have not done the last task, see the previous documentation [5. Modify Dapp](https://github.com/rairprotocol/dev-dapp-season1/blob/main/Season%201%20Tasks/5.%20Modify%20Dapp/README.md) for instructions on how to get your RPC node set up.
-### Metamask
+### 4. Metamask
 If you did the last task you'll already have Metamask. If you have not done the last task, see the previous documentation [5. Modify Dapp](https://github.com/rairprotocol/dev-dapp-season1/blob/main/Season%201%20Tasks/5.%20Modify%20Dapp/README.md) for instructions on how to get your wallet.
-### Sepolia ETH
+### 5. Sepolia ETH
 In our example, we will be deploying our smart contracts to Sepolia Testnet. This means you need Sepolia ETH to pay for the transactions. Use [Google's Sepolia Faucet](https://cloud.google.com/application/web3/faucet/ethereum/sepolia) to receive some free tokens to complete this task.
-### VSCode
+### 6. VSCode
 If you already have a development environment of your own you can skip this step, but for those who dont you're gonna want to install an IDE(Integrated development environment) on your machine. IDEs are super helpful when working on large projects. They help you keep organized and provide a lot of functionality that will help in writing code easier. We recommend [VSCode](https://code.visualstudio.com/).
-### Clone RAIR-Solidity Repository
+### 7. Clone RAIR-Solidity Repository
 Head to [RAIR-Solidity](https://github.com/rairprotocol/rair-solidity) and download or clone(```gh repo clone rairprotocol/rair-solidity)``` the repository to your local machine. 
-### Install Node Version Manager(NVM)
+### 8. Install Node Version Manager(NVM)
 You'll need a specific version of NPM installed to run the test script. In order to do this we'll use [Node Version Manager](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating). If it doesnt run after installing, follow the troubleshooting steps in the documentation.
 
 ## Steps
