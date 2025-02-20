@@ -1,19 +1,32 @@
 ## 6. EVM Deploy
 
 ## Pre-Configuration
+### Etherscan API Key
+Register on [Etherscan](https://etherscan.io/) to get an API key. You'll need this for your .env configuration.
+### CoinmarketCap API key
+Register on [CoinMarketCap](https://coinmarketcap.com/) to get an API key. You'll need this for your .env configuration.
+### Alchemy RPC Node
+If you did the last task you'll already have your free RPC node. If you have not done the last task, see the previous documentation [5. Modify Dapp](https://github.com/rairprotocol/dev-dapp-season1/blob/main/Season%201%20Tasks/5.%20Modify%20Dapp/README.md) for instructions on how to get your RPC node set up.
+### Metamask
+If you did the last task you'll already have Metamask. If you have not done the last task, see the previous documentation [5. Modify Dapp](https://github.com/rairprotocol/dev-dapp-season1/blob/main/Season%201%20Tasks/5.%20Modify%20Dapp/README.md) for instructions on how to get your wallet.
+### Sepolia ETH
+In our example, we will be deploying our smart contracts to Sepolia Testnet. This means you need Sepolia ETH to pay for the transactions. Use [Google's Sepolia Faucet](https://cloud.google.com/application/web3/faucet/ethereum/sepolia) to receive some free tokens to complete this task.
+### VSCode
+If you already have a development environment of your own you can skip this step, but for those who dont you're gonna want to install an IDE(Integrated development environment) on your machine. IDEs are super helpful when working on large projects. They help you keep organized and provide a lot of functionality that will help in writing code easier. We recommend [VSCode](https://code.visualstudio.com/).
 ### Clone RAIR-Solidity Repository
 Head to [RAIR-Solidity](https://github.com/rairprotocol/rair-solidity) and download or clone(```gh repo clone rairprotocol/rair-solidity)``` the repository to your local machine. 
 ### Install Node Version Manager(NVM)
 You'll need a specific version of NPM installed to run the test script. In order to do this we'll use [Node Version Manager](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating). If it doesnt run after installing, follow the troubleshooting steps in the documentation.
 
 ## Steps
-1. 
-2. 
-3. 
-4. From inside the RAIR-Solidity repository, navigate to ```diamond-contracts```.
-5. Edit ```.nvmrc``` and decrement ```v21.2.0``` to ```v20```. Save the file.
-6. Run ```nvm install``` , then ```nvm use``` to read the ```.nvmrc``` file in the folder and install the appropriate Node version.
-7. Rename ```sample.env``` file to ```.env``` in the folder, fill all values (RPC endpoints, API keys, Private Key for the deployer account)
+We are gonna start by configuring everything we need to run the test script. This includes installing packages with ```npm``` and setting the appropriate environment variables. 
+1. In your IDE, from the root of the ```RAIR-Solidity``` repository, navigate to ```diamond-contracts```.
+2. Run ```nvm use``` to read the ```.nvmrc``` file in the folder and install the appropriate Node version.
+3. Run ```npm i``` to install all the necessary packages.
+4. Locate and copy ```sample.env```. Rename the copy to ```.env```. 
+5. Fill all values (RPC endpoints, API keys, Private Key for the deployer account)
+6. 
+7. 
 8. To test the smart contracts use the command npm run test, this will compile all contracts and make sure the environment values are working correctly. (You may need to install 
 9. Navigate to the [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab in the dev-dapp-season1 repository
 10. Click "New Issue" (the green button).
