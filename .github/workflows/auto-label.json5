@@ -1,6 +1,7 @@
 {
   labelsSynonyms: {
     'Entered': ['Submit an issue that follows the guidelines'],
+    'EVM Deploy': ['My RAIR20 Etherscan link is'],
     'Giveaway Entered': ['sign me up for the raffle'],
     'Giveaway Entered': ['I want some DevDapp swag'],
     'Akash Deployed': ['I deployed on Akash! My URI is'],
