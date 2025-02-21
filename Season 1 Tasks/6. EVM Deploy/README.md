@@ -1,4 +1,5 @@
 ## 6. EVM Deploy
+RAIR comes with built-in smart contracts, and while you are free to use your own, we built in a lot of cool features 
 
 ## Pre-Configuration
 ### 1. Etherscan API Key
@@ -6,7 +7,7 @@ Register on [Etherscan](https://etherscan.io/) to get an API key. You'll need th
 ### 2. CoinmarketCap API key
 Register on [CoinMarketCap](https://coinmarketcap.com/) to get an API key. You'll need this for your .env configuration.
 ### 3. Alchemy RPC Node
-If you did the last task you'll already have your free RPC node. If you have not done the last task, see the previous documentation [5. Modify Dapp](https://github.com/rairprotocol/dev-dapp-season1/blob/main/Season%201%20Tasks/5.%20Modify%20Dapp/README.md) for instructions on how to get your RPC node set up.
+If you did the last task you'll already have your free RPC node. If you have not done the last task, see the previous documentation [5. Modify Dapp](https://github.com/rairprotocol/dev-dapp-season1/blob/main/Season%201%20Tasks/5.%20Modify%20Dapp/README.md) for instructions on how to get your RPC node set up. Note, your alchemy node has a different address for both Mainnet and Testnet. You'll find both in your dashboard.
 ### 4. Metamask
 If you did the last task you'll already have Metamask. If you have not done the last task, see the previous documentation [5. Modify Dapp](https://github.com/rairprotocol/dev-dapp-season1/blob/main/Season%201%20Tasks/5.%20Modify%20Dapp/README.md) for instructions on how to get your wallet.
 ### 5. Sepolia ETH
@@ -19,19 +20,30 @@ Head to [RAIR-Solidity](https://github.com/rairprotocol/rair-solidity) and downl
 You'll need a specific version of NPM installed to run the test script. In order to do this we'll use [Node Version Manager](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating). If it doesnt run after installing, follow the troubleshooting steps in the documentation.
 
 ## Steps
-We are gonna start by configuring everything we need to run the test script. This includes installing packages with ```npm``` and setting the appropriate environment variables. 
+First we need to compile all the contracts and make sure the environment values are working correctly. We have included a script to do this. 
 1. In your IDE, from the root of the ```RAIR-Solidity``` repository, navigate to ```diamond-contracts```.
 2. Run ```nvm use``` to read the ```.nvmrc``` file in the folder and install the appropriate Node version.
 3. Run ```npm i``` to install all the necessary packages.
 4. Locate and copy ```sample.env```. Rename the copy to ```.env```. 
-5. Fill all values (RPC endpoints, API keys, Private Key for the deployer account)
-6. 
-7. 
-8. To test the smart contracts use the command npm run test, this will compile all contracts and make sure the environment values are working correctly. (You may need to install 
-9. Navigate to the [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab in the dev-dapp-season1 repository
-10. Click "New Issue" (the green button).
-11. Add a title to your issue. In this case your title should read "2. Favorite EIP"
-12. Copy-paste the text below in the body of your new issue, and edit it according to our requests.
+5. Open ```.env```. We will need to populate 4 values:
+   - ```ETH_MAIN_RPC=``` Is the address of your Mainnet RPC Node. This is used for the test script and uses no fees.
+   - ```SEPOLIA_RPC=``` Is the address of your Testnet RPC Node. We will deploy our contract to Sepolia Testnet since we can use a sepolia faucet to pay for the transaction fees.
+   - ```ADDRESS_PRIVATE_KEY=``` Is the private key of the wallet which will deploy the contract. DO NOT share this private key with anyone for any reason. DO NOT commit code with your private keys exposed in plaintext. We will never ask you to send us your private key, and you should remove your private key permanentely from this file after completing the task.
+   - ```ETHERSCAN_API_KEY=``` For verifying contract deployment.
+7. Save ```.env```
+8. Locate ```hardhat.config.js```
+9. On line 43, change ```blockNumber``` to ```21876874```
+10. Scroll down to line 75. Comment out the block related to ```MINATO_RPC``` as this currently causes an error.
+11. Save ```hardhat.config.js```
+12. In the terminal, navigate to ```diamond-contracts```. Run the command ```npm run test```, this will compile all contracts and make sure the environment values are working correctly.
+
+If everything works out we can move on to the next step. Its ok if there are a few errors, but if there are hundreds or it doesnt compile you might want to go back and double-check the previous steps. Next we are going to deploy the contracts to Sepolia Testnet.
+
+13. 
+14. Navigate to the [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab in the dev-dapp-season1 repository
+15. Click "New Issue" (the green button).
+16. Add a title to your issue. In this case your title should read "2. Favorite EIP"
+17. Copy-paste the text below in the body of your new issue, and edit it according to our requests.
 ```
 I checked out Ethereum Improvement Proposals! My Favorite new EIP is [Write EIP here].
 
