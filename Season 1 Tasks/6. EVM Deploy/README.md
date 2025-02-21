@@ -1,5 +1,9 @@
 ## 6. EVM Deploy
-RAIR comes with built-in smart contracts, and while you are free to use ours (which we own), you can also deploy yours which your own! we built in a lot of cool features 
+Ethereum Virtual Machine (EVM) is a distributed state machine which allows for the execution of arbitrary code via Smart Contracts. Smart contracts are simply chunks of code deployed to a specific address where they can be called on to execute functions for a user who pays a transaction fee. 
+
+RAIR comes with built-in ERC20 Diamond Smart Contracts. What's a Diamond Smart Contract you ask? It's akin to a modular engine. This design allows for seamless upgrades and maintenance without overhauling the entire system. Given that once a contract has been deployed, it cannot ever be changed, Diamond archetecture allows us to graft new components and features to an already deployed contract, expanding its capabilities while maintaining its functionality. 
+
+While you are free to use ours (which we own), you can also deploy your own (which your own)! That's what we are going to do in this task. Its a little more involved than the others before it so pay close attention to the instructions. 
 
 ## Pre-Configuration
 ### 1. Etherscan API Key
