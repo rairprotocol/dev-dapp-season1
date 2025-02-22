@@ -23,7 +23,7 @@ From there the sky is the limit to build your own Dapp. Or join a team to help t
 
 # Rewards
 
-Season 1 rewards are 50,000,000 RAIR + bonus partner tokens!! Season 1 starts now through May 2025. Join early to have more time to complete tasks. 
+Season 1 rewards are 50,000,000 RAIR + bonus partner tokens!! Season 1 starts now through May 2025. Join early to have more time to complete tasks. Your rewards will be held in an abstracted Alchemy smart wallet that is connected to your GitHub account and will be released to you at the end of the season.
 
 # Help
 
