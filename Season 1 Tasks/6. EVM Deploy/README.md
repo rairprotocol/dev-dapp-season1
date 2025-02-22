@@ -1,9 +1,9 @@
 ## 6. EVM Deploy
-Ethereum Virtual Machine (EVM) is a distributed state machine which allows for the execution of arbitrary code via Smart Contracts. Smart contracts are simply chunks of code deployed to a specific address where they can be called on to execute functions for a user who pays a transaction fee. 
+Ethereum Virtual Machine (EVM) is a distributed state machine which allows for the execution of arbitrary code via Smart Contracts. Smart contracts are simply chunks of code deployed to a specific address where they can be called on to execute functions for a user who pays a transaction fee. Very cool stuff.
 
-RAIR comes with built-in ERC20 Diamond Smart Contracts. What's a Diamond Smart Contract you ask? It's akin to a modular engine. This design allows for seamless upgrades and maintenance without overhauling the entire system. Given that once a contract has been deployed, it cannot ever be changed, Diamond archetecture allows us to graft new components and features to an already deployed contract, expanding its capabilities while maintaining its functionality. This is why we will be creating 
+RAIR comes with built-in Diamond Smart Contracts. What's a Diamond Smart Contract you ask? It's akin to a modular engine. This design allows for seamless upgrades and maintenance without overhauling the entire system. Given that once a contract has been deployed, it cannot ever be changed, Diamond archetecture allows us to graft new components and features to an already deployed contract, expanding its capabilities while maintaining its persistence.
 
-While you are free to use ours (which we own), you can also deploy your own (which your own)! That's what we are going to do in this task. Its a little more involved than the others before it so pay close attention to the instructions. 
+In this task we will show you how to deploy your own RAIR Diamond Contracts to Sepolia Testnet. Its a little more involved than the others before it so pay close attention to the instructions. By the end you'll have a set of contracts deployed which you own! 
 
 ## Pre-Configuration
 ### 1. Etherscan API Key
