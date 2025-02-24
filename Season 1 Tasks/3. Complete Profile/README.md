@@ -3,6 +3,12 @@ In this task you will be heading to [DevDapp.com](https://devdapp.com) and getti
 
 Setting up your profile is easy, you just add your email and a profile pic, as well as references and experience with prior projects you have worked on; think of it like your DevDapp resume. 
 
+TL;DR - paste your profile link into a new task to get points! 
+
+Like this - https://devdapp.com/0x3c24d1f91f588e0341c0f76d7fd78712a1c978aa
+
+
+
 ## Steps
 1. Navigate to [DevDapp.com](https://devdapp.com).
 <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/3.%20Update%20Profile/1.png" width="75%"/>
