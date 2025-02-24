@@ -7,7 +7,9 @@ TL;DR - paste your profile link into a new task to get points!
 
 Like this - https://devdapp.com/0x3c24d1f91f588e0341c0f76d7fd78712a1c978aa
 
+<img width="874" alt="Screenshot 2025-02-24 at 11 46 14 AM" src="https://github.com/user-attachments/assets/57d8e1a9-49b3-4528-862f-c98b6a460053" />
 
+Then you'll see your points in DevDapp! 
 
 ## Steps
 1. Navigate to [DevDapp.com](https://devdapp.com).
