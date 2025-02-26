@@ -3,10 +3,6 @@ In this task you will be heading to [DevDapp.com](https://devdapp.com) and getti
 
 Setting up your profile is easy, you just add your email and a profile pic, as well as references and experience with prior projects you have worked on; think of it like your DevDapp resume. 
 
-TL;DR - paste your profile link into a new task to get points! 
-
-Like this - https://devdapp.com/0x3c24d1f91f588e0341c0f76d7fd78712a1c978aa
-
 <img width="874" alt="Screenshot 2025-02-24 at 11 46 14 AM" src="https://github.com/user-attachments/assets/57d8e1a9-49b3-4528-862f-c98b6a460053" />
 
 Then you'll see your points in DevDapp! 
@@ -48,7 +44,10 @@ Then you'll see your points in DevDapp!
 12. Navigate to the Issues tab in the dev-dapp-season1 repository
 13. Click "New Issue" (the green button).
 14. Add a title to your issue. In this case your title should read "3. Complete Profile"
-15. Include a screenshot of your comlpeted profile, and a link to your DevDapp profile. 
+15. Include a screenshot of your comlpeted profile, and a link to your DevDapp profile (Like the example below).
+```
+My Profile URL is: https://devdapp.com/0x3c24d1f91f588e0341c0f76d7fd78712a1c978aa
+```
 
 Upon completion, your task will be validated and if it is correct, you will be assigned the "Completed Profile" label. If there is an issue, you will see the "Unresolved" label, this means there is a problem that needs to be corrected. Edit your issue and follow the guidelines more closely until you receive your "Completed Profile" label. Do not create multiple issues for the same task. If you dont see your issue, it means it has been validated and closed. Verify this by setting the sort settings to show closed issues.
 
