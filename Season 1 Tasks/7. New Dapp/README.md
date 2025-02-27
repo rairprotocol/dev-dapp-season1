@@ -1,26 +1,27 @@
 ## 7. New Dapp
-So far we have introduced you to GitHub, showed you how to deploy RAIR to Akash, installed our own RPC nodes, deployed our own smart contracts, but why? The Goal of DevDapp is to help us to improve our open source. The tasks we developed in this first season are ancillary to this goal. The point being that we teach you enough about our project that you will be interested in developing it on your own. This is the goal of any true Open-Source project. What makes DevDapp different is we are attempting to incentivize developer contributions by offering a tangible reward, rather than relying simply on the inherent kindness which is implied by the very broad Open-Source ethos. We want you to have your cake, and eat it too.
+So far, we have introduced you to GitHub, shown you how to deploy RAIR to Akash, installed our own RPC nodes, and deployed our own smart contracts — but why? The goal of DevDapp is to show that you can improve open source and reward contributors for their work. The tasks we developed in this first season are ancillary to this goal. The point is to teach you enough about our project that you become interested in helping us continue its development. This is the goal of any true open-source project.
 
-In this task, we want to see who can rise to the challenge of using our Open-Source RAIR-Dapp to make something new and interesting. We're not asking for anything crazy, theres only a little over 2 months before the season ends so we can keep things reasonable. What we are mainly looking for is:
+What makes DevDapp different is our attempt to incentivize developer contributions by offering a tangible reward, rather than relying solely on the inherent kindness implied in the open-source ethos. We want you to have your cake and eat it too.
+
+In this task, we want to see who can rise to the challenge of using our Open-Source RAIR-Dapp to make something new and interesting. We're not asking for anything crazy, theres only a little over 2 months before the season ends so we can keep things reasonable. Our judging criteria is simple, we are looking for:
+
 1. A new/modified front end.
 2. A new and interesting feature or integration.
 3. Some kind of unique blockchain functionality.
-4. Deployed on SSL enabled cloud server. 
+4. Deployed on SSL enabled cloud server.
+
+We realize we are kind of throwing you in the deep-end on this one but all we are really looking for is an honest effort. There are more resources now than ever for aspiring developers to learn the skills neceassary to complete the task
 Rather than this being the end of our game, think of this as the beginning of your new Dapp. Have fun. If you have any questions, feel free to join our Discord and we will do our best to help you.
 
 ## Example
 https://onchainwellness.com/dapp-lo0m1pa2k
 
-Node JS Backend
-React Frontend
-Vite JS framework
-mongo DB
-redis state management
-alchemy synching engine
-
-
 ## Some Extra Help
-We realize you are kind of jumping into the deep-end with this one 
+Node JS Backend
+React Frontend with Typescript and Vite JS framework
+Mongo Database
+Redis Session Manager
+Alchemy synching engine
 
 ## Steps
 
