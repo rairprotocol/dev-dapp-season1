@@ -5,7 +5,16 @@ In this task, we want to see who can rise to the challenge of using our Open-Sou
 1. A new/modified front end.
 2. A new and interesting feature or integration.
 3. Some kind of unique blockchain functionality.
+4. Deployed on SSL enabled cloud server. 
 Rather than this being the end of our game, think of this as the beginning of your new Dapp. Have fun. If you have any questions, feel free to join our Discord and we will do our best to help you.
+
+Node JS Backend
+React Frontend
+Vite JS framework
+mongo DB
+redis state management
+alchemy synching engine
+
 
 ## Some Extra Help
 We realize you are kind of jumping into the deep-end with this one 
@@ -14,7 +23,10 @@ We realize you are kind of jumping into the deep-end with this one
 
 
 To round things out we just need to create a new issue:
-
+1. Make new issuev New Dapp - Dapp Name
+2. Description
+3. Link to URL of new dapp
+4. 
 17. Navigate to the [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab in the dev-dapp-season1 repository
 18. Click "New Issue" (the green button).
 19. Add a title to your issue. In this case your title should read "6. EVM Deploy"
