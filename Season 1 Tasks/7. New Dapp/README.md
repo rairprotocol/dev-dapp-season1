@@ -3,7 +3,7 @@ So far, we have introduced you to GitHub, shown you how to deploy RAIR to Akash,
 
 What makes DevDapp different is our attempt to incentivize developer contributions by offering a tangible reward, rather than relying solely on the inherent kindness implied in the open-source ethos. We want you to have your cake and eat it too. We also want others to learn from our successes and mistakes which is one of the reasons why we open-sourced. 
 
-In this task, we want to see who can rise to the challenge of using our Open-Source RAIR-Dapp to make something new and interesting. We're not asking for anything crazy, theres only a little over 2 months before the season ends so we are attempting to keep things reasonable. Our judging criteria is simple, we are looking for:
+In this task, we want to see who can rise to the challenge by using our Open-Source RAIR-Dapp to make something new and interesting. We're not asking for anything crazy, theres only a little over 2 months before the season ends so we are attempting to keep things reasonable. Our judging criteria is simple, we are looking for:
 
 1. A new/modified front end.
 2. A new and interesting feature or integration.
@@ -13,14 +13,15 @@ In this task, we want to see who can rise to the challenge of using our Open-Sou
 We realize we are kind of throwing you in the deep-end on this one but all we are really looking for is an honest effort. There are more resources now than ever for aspiring developers to learn the skills neceassary to complete the task. Rather than this being the end of our game, think of this as the beginning of your new Dapp. Have fun. If you have any questions, feel free to join our Discord and we will do our best to help you.
 
 ## Example
-As an example of what's possible on RAIR look to our friends [OnChain Wellness](https://onchainwellness.com/dapp-lo0m1pa2k) who are building a telehealth Dapp which features token-gated zoom meetings with mental health professionals! This Dapp was developed in about 2 months by a single developer! 
+As an example of what's possible on RAIR look to our friends [OnChain Wellness](https://onchainwellness.com/dapp-lo0m1pa2k). They are building a TeleHealth Dapp which features token-gated zoom meetings with mental health professionals! This Dapp was developed in about 2 months by a single developer.
 
 ## Some Extra Help
-Node JS Backend
-React Frontend with Typescript and Vite JS framework
-Mongo Database
-Redis Session Manager
-Alchemy synching engine
+RAIR has:
+- Node JS Backend
+- React Frontend with Typescript and Vite JS framework
+- Mongo Database
+- Redis Session Manager
+- Alchemy synching engine
 
 ## Steps
 
@@ -46,9 +47,5 @@ My RAIR20 Etherscan link is [https://sepolia.etherscan.io/address/0xAddress].
 Upon completion, your task will be validated and if it is correct, you will be assigned the "EVM Deploy" label. If there is an issue, you will see the "Unresolved" label, this means there is a problem that needs to be corrected. Edit your issue and follow the guidelines more closely until you receive your "EVM Deploy" label. Do not create multiple issues for the same task. If you dont see your issue, it means it has been validated and closed. Verify this by setting the sort settings to show closed issues.
 
 Congratulations! Continue with the next task to earn levels and climb the leaderboard to earn your share of the rewards!
-
-## Recommended Reading 
-[Juan's Hardhat Guide for Deploying Smart Contracts](https://github.com/rairprotocol/rair-solidity/blob/main/GUIDE.MD)\
-[Ethereum Virtual Machine (EVM)](https://ethereum.org/en/developers/docs/evm/)
 
 
