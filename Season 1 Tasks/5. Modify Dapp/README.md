@@ -33,13 +33,22 @@ Once you have Docker installed you'll next need a free Alchemy account to have a
 ### 3. Metamask
 To connect to the blockchain and verify your deployment, you're gonna need Metamask. Metamask is a Web3 wallet that you use to make signatures on chain. It's also the easiest way to login to RAIR so go ahead and install that in your browser as an add-on. Make a new wallet if you dont already have one.
 
-### 4.VSCode
+### 4. VSCode
 If you already have a development environment of your own you can skip this step, but for those who dont you're gonna want to install an IDE(Integrated development environment) on your machine. IDEs are super helpful when working on large projects. They help you keep organized and provide a lot of functionality that will help in writing code easier. We recommend [VSCode](https://code.visualstudio.com/).
 
-### 5.Clone RAIR
+### 5. Clone RAIR
 Last but not least, you need the RAIR source code. Head to the [RAIR-Dapp](https://github.com/rairprotocol/rair-dapp) repository and download the code. There are many ways to do this but for the sake of simplicity we're just going to download the zip file to our machine, but you can also use git if you prefer (in the directory off your choice run ```gh repo clone rairprotocol/rair-dapp```). In your IDE, open the folder ```RAIR-Dapp``` (or whatever you named the file) wherever you extracted it and youll see all the files. 
 
 <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/5.%20Modify%20Dapp/2.png" width="50%"/><img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/5.%20Modify%20Dapp/3.png" width="25%"/>
+
+### 6. Change Working Branch
+We need to change our working branch before we start. This is necessary because later versions of RAIR-Dapp require more memory to build which may exceed your local machine's limits and cause building to fail. 
+
+1. In VS Code locate the branch in the bottom left corrner. Click where it says "main":
+<img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/5.%20Modify%20Dapp/28.png" width="25%"/>
+
+2. This brings up the option to select a different branch of the current repository. In this case we want to use ```300-social-login-fix```
+<img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/5.%20Modify%20Dapp/29.png" width="50%"/>
 
 ## Steps
 We first need to configure the deployment to use your new alchemy account. We will do this by creating two ```.env``` files which contain all the variables the app might need to access before deployment. These values are referenced from these files throughout the app so they dont have to be hard-coded into the source. 
