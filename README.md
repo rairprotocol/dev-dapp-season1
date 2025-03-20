@@ -14,7 +14,6 @@ RAIRprotocol is a Dapp building engine. By completing the initial 8 tasks in Dev
 
 1. If you haven't done so yet, the first step to start playing is by logging in with your GitHub account on [DevDapp.com](Https://devdapp.com). This creates your in-game account and is necessary for tracking your progression.
 2. Next, you need to select a task. Scroll down on DevDapp.com and locate the "Tasks" section. Here you can watch an introductory video for the task and you'll find a link to the GitHub tutorial to help you complete it.
-![initial-tasks](https://github.com/rairprotocol/dev-dapp-s1/blob/main/devdapp-assets/initial-tasks.png)
 3. Complete the task.
 4. Make a new issue in the GitHub for your task. The tutorial will show you how to format your proof of completion.
 5. If everything checks out, you will receive a label on your task showing you have completed the task. This will update your profile on DevDapp.com with your new levels.
