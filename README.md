@@ -12,11 +12,9 @@ Welcome to DevDapp! The GitHub Incentives Layer built on RAIRprotocol. With DevD
 # How DevDapp Works
 
 1. **Log in with GitHub:** Pop over to DevDapp.com and sign in with your GitHub account. This sets up your profile and tracks your progress.
-2. **Pick a task:** Head to the "Tasks" section, watch the intro video, and follow the GitHub tutorial to get started.
-3. **Complete the task:** Finish it up—you’re getting closer to Dapp-building greatness!
-4. **Submit your work: **Create a GitHub issue with your proof of completion (the tutorial will show you how).
-5. **Get verified:** If it’s all good, you’ll earn a completion label, and your profile will level up!
-6. **Keep going:** Tackle more tasks to climb the leaderboards and snag a share of the $60k prize pool in May 2025!
+3. **Complete your first task:** Watch how-to videos in the tasks section on DevDapp. 
+4. **Submit your work:** Create a GitHub issue with your proof of completion (the tutorial will show you how).
+5. **Get verified and earn:** If it’s all good, you’ll earn a completion label, and your profile will level up!
 
 # Rewards
 
