@@ -32,6 +32,8 @@ Our community is where we post the important announcements first, and where you 
 
 # RAIR dApp - Comprehensive Integration Master List
 
+A list of all the underlying technologies that power RAIRprotocol - so much to learn good thing we have AI! 
+
 ## 1. Blockchain Infrastructure
 *Essential blockchain connectivity and interaction technologies*
 
