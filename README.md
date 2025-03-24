@@ -204,3 +204,239 @@ Our community is where we post the important announcements first, and where you 
 | 12.4  | [Sentry.io](https://sentry.io/signup/)                | Monitoring  | Error tracking service               | Tracks application errors and performance | `SENTRY_DSN`                  |
 | 12.5  | [Zoom](https://zoom.us/signup)                        | Communication | Video meetings integration          | Facilitates video communication features  | `ZOOM_API_KEY`, `ZOOM_API_SECRET`, `ZOOM_MEETING_ID` |
 | 12.6  | [Yoti](https://www.yoti.com/developers/sign-up/)      | Identity    | ID verification service              | Provides KYC and identity verification    | `YOTI_CLIENT_ID`              |
+
+
+# RAIRprotocol Master API List 
+
+---
+
+## Authentication
+Endpoints related to user authentication, including wallet sign-in and session management.
+
+| Endpoint                       | Method | Description                          | Authentication | Importance                      |
+|--------------------------------|--------|--------------------------------------|----------------|---------------------------------|
+| `/auth/get_challenge`          | POST   | Generate challenge for wallet sign-in| None           | Initiates web3 authentication flow |
+| `/auth/login`                  | POST   | Login with wallet signature          | None           | Core authentication endpoint    |
+| `/auth/loginSmartAccount`      | POST   | Login with smart account signature   | None           | Support for smart contract wallets |
+| `/auth/logout`                 | GET    | Logout user session                  | User Session   | Session management             |
+| `/auth/me`                     | GET    | Get current user details             | User Session   | Session verification           |
+| `/auth/unlock`                 | POST   | Unlock media with session            | User Session   | Content access management      |
+| `/auth/stream/out`             | GET    | End media stream authorization       | User Session   | Media streaming control        |
+
+---
+
+## User Management
+Endpoints for managing user profiles and related administrative tasks.
+
+| Endpoint                       | Method | Description                          | Authentication | Importance                      |
+|--------------------------------|--------|--------------------------------------|----------------|---------------------------------|
+| `/users/list`                  | GET    | List all users                       | Admin          | User management for admins      |
+| `/users/export`                | GET    | Export users as CSV                  | Admin          | Data export functionality       |
+| `/users/verify-age`            | POST   | Verify user age with Yoti            | User Session   | Age verification compliance     |
+| `/users/:publicAddress`        | GET    | Get user by wallet address           | None           | Public profile retrieval        |
+| `/users/:publicAddress`        | PATCH  | Update user profile                  | User Session   | Profile management             |
+
+---
+
+## NFT Management
+Endpoints for creating, retrieving, and managing non-fungible tokens (NFTs).
+
+| Endpoint                                              | Method | Description                          | Authentication | Importance                      |
+|-------------------------------------------------------|--------|--------------------------------------|----------------|---------------------------------|
+| `/nft`                                                | POST   | Create tokens via CSV                | Admin          | Bulk token creation             |
+| `/nft`                                                | GET    | Get current user's tokens            | User Session   | Token discovery                 |
+| `/nft/:userAddress`                                   | GET    | Get tokens by user address           | None           | Profile token view              |
+| `/nft/csv/sample`                                     | GET    | Get metadata CSV sample              | None           | Help for token creation         |
+| `/nft/pinningMultiple`                                | POST   | Pin multiple token metadata to IPFS  | User Session   | Token metadata persistence      |
+| `/nft/network/:networkId/:contract/:product`          | GET    | Get tokens for product               | None           | Token discovery                 |
+| `/nft/network/:networkId/:contract/:product/numbers`  | GET    | Get token numbers                    | None           | Token ID enumeration            |
+| `/nft/network/:networkId/:contract/:product/attributes` | GET  | Get product attributes               | None           | Metadata attribute discovery    |
+| `/nft/network/:networkId/:contract/:product/files`    | GET    | Get files for product                | None           | Product content discovery       |
+| `/nft/network/:networkId/:contract/:product/files/:token` | GET | Get files for token                 | None           | Token content discovery         |
+| `/nft/network/:networkId/:contract/:product/offers`   | GET    | Get offers for product               | None           | Product offer discovery         |
+| `/nft/network/:networkId/:contract/:product/locks`    | GET    | Get locked offers for product        | None           | Locked offer discovery          |
+| `/nft/network/:networkId/:contract/:product/token/:token` | GET | Get single token                    | None           | Detailed token info             |
+| `/nft/network/:networkId/:contract/:product/token/:token` | POST | Update token metadata              | User Session   | Metadata management             |
+| `/nft/network/:networkId/:contract/:product/token/:token/pinning` | POST | Pin single token metadata       | User Session   | IPFS persistence                |
+
+---
+
+## Tokens
+Endpoints for retrieving information about tokens (potentially including both fungible and non-fungible tokens).
+
+| Endpoint                       | Method | Description                          | Authentication | Importance                      |
+|--------------------------------|--------|--------------------------------------|----------------|---------------------------------|
+| `/tokens`                      | GET    | Get all tokens                       | None           | Token discovery                 |
+| `/tokens/:token`               | GET    | Get token by number                  | None           | Token lookup                    |
+| `/tokens/id/:id`               | GET    | Get token by ID                      | None           | Token lookup by database ID     |
+
+---
+
+## Contract Management
+Endpoints for managing smart contracts and their associated data.
+
+| Endpoint                                      | Method | Description                          | Authentication      | Importance                      |
+|-----------------------------------------------|--------|--------------------------------------|---------------------|---------------------------------|
+| `/contracts`                                  | GET    | Get all contracts                    | None                | Contract discovery              |
+| `/contracts/factoryList`                      | GET    | Get contracts for factory            | User Session        | Factory contract discovery      |
+| `/contracts/my`                               | GET    | Get user's contracts                 | User Session        | User's contract discovery       |
+| `/contracts/full`                             | GET    | Get full contract list               | None                | Enhanced contract discovery     |
+| `/contracts/network/:networkId/:contractAddress` | GET  | Find contract by network and address | None                | Contract lookup                 |
+| `/contracts/network/:networkId/:contractAddress/products` | GET | Get products for contract         | None                | Contract product discovery      |
+| `/contracts/network/:networkId/:contractAddress/offers` | GET | Get offers for contract           | None                | Contract offer discovery        |
+| `/contracts/import`                           | POST   | Import external contract             | Admin + Super Admin | Contract importing              |
+| `/contracts/:id`                              | GET    | Get contract by ID                   | None                | Contract details                |
+| `/contracts/:id`                              | PATCH  | Update contract                      | Admin + Super Admin | Contract management             |
+
+---
+
+## File Management
+Endpoints for managing media files and their metadata.
+
+| Endpoint                       | Method | Description                          | Authentication      | Importance                      |
+|--------------------------------|--------|--------------------------------------|---------------------|---------------------------------|
+| `/files/update/:mediaId`       | PATCH  | Update media file                    | User Session + Owner| Content management              |
+| `/files/remove/:mediaId`       | DELETE | Delete media file                    | User Session + Owner| Content deletion                |
+| `/files/list`                  | GET    | List media files                     | None                | Content discovery               |
+| `/files/byId/:id`              | GET    | Get file by ID                       | None                | File lookup                     |
+| `/files/byId/:id`              | PUT    | Update file                          | User Session + Owner| File management                 |
+| `/files/byCategory/:id`        | GET    | Get files by category                | None                | Category-based discovery        |
+| `/files/forToken/:id`          | GET    | Get files for token                  | None                | Token file lookup               |
+| `/files/categories`            | GET    | List file categories                 | None                | Category discovery              |
+| `/files/:id/unlocks`           | GET    | Get file unlock offers               | None                | File access management          |
+| `/files/:id/unlocks`           | POST   | Create file unlock offer             | User Session + Owner| File access management          |
+| `/files/:id/unlocks`           | DELETE | Remove file unlock offer             | User Session + Owner| File access management          |
+
+---
+
+## Transactions
+Endpoints for processing user transactions.
+
+| Endpoint                       | Method | Description                          | Authentication | Importance                      |
+|--------------------------------|--------|--------------------------------------|----------------|---------------------------------|
+| `/transactions/:network/:hash` | POST   | Process user transaction             | User Session   | Transaction recording and processing |
+
+---
+
+## Product Management
+Endpoints for managing products within the platform.
+
+| Endpoint                       | Method | Description                          | Authentication | Importance                      |
+|--------------------------------|--------|--------------------------------------|----------------|---------------------------------|
+| `/products`                    | GET    | Get all products                     | None           | Product discovery               |
+| `/products/user/:userAddress`  | GET    | Get products by user                 | None           | User-specific products          |
+| `/products/:id`                | GET    | Get product by ID                    | None           | Product lookup                  |
+| `/products/:id`                | POST   | Set product banner                   | None           | Product customization           |
+
+---
+
+## Credits and Payments
+Endpoints for managing user credits and withdrawals.
+
+| Endpoint                       | Method | Description                          | Authentication | Importance                      |
+|--------------------------------|--------|--------------------------------------|----------------|---------------------------------|
+| `/credits/:blockchain/:tokenAddress` | GET  | Get user credits                    | User Session   | Balance checking                |
+| `/credits/withdraw`            | POST   | Generate withdraw request            | User Session   | Fund withdrawal                 |
+
+---
+
+## Settings & Configuration
+Endpoints for managing server and application settings.
+
+| Endpoint                       | Method | Description                          | Authentication | Importance                      |
+|--------------------------------|--------|--------------------------------------|----------------|---------------------------------|
+| `/settings`                    | GET    | Get server settings                  | None           | System configuration            |
+| `/settings/blockchain`         | POST   | Set blockchain setting               | Super Admin    | Blockchain configuration        |
+| `/settings/appLogo`            | POST   | Set application logo                 | Admin          | Branding                        |
+| `/settings/theme`              | GET    | Get theme settings                   | None           | UI customization                |
+| `/settings/featured-collection`| GET    | Get featured collection              | None           | Homepage featured content       |
+
+---
+
+## Analytics & Reports
+Endpoints for retrieving analytics data and reports.
+
+| Endpoint                       | Method | Description                          | Authentication | Importance                      |
+|--------------------------------|--------|--------------------------------------|----------------|---------------------------------|
+| `/analytics/:mediaId`          | GET    | Get analytics data                   | User Session   | Performance tracking            |
+| `/analytics/:mediaId/csv`      | GET    | Get analytics CSV report             | User Session   | Data export                     |
+
+---
+
+## Search
+Endpoints for performing searches across the platform.
+
+| Endpoint                       | Method | Description                          | Authentication | Importance                      |
+|--------------------------------|--------|--------------------------------------|----------------|---------------------------------|
+| `/search/:textParam`           | GET    | Global search                        | None           | Content discovery               |
+| `/search/:textParam/all`       | GET    | Expanded global search               | None           | Enhanced discovery              |
+
+---
+
+## Notifications
+Endpoints for managing user notifications.
+
+| Endpoint                       | Method | Description                          | Authentication | Importance                      |
+|--------------------------------|--------|--------------------------------------|----------------|---------------------------------|
+| `/notifications`               | GET    | List notifications                   | User Session   | User notifications              |
+| `/notifications/:id`           | GET    | Get single notification              | User Session   | Notification details            |
+| `/notifications`               | PUT    | Mark notifications as read           | User Session   | Notification management         |
+| `/notifications`               | DELETE | Delete notifications                 | User Session   | Notification management         |
+
+---
+
+## Favorites
+Endpoints for managing user favorites.
+
+| Endpoint                       | Method | Description                          | Authentication | Importance                      |
+|--------------------------------|--------|--------------------------------------|----------------|---------------------------------|
+| `/favorites`                   | POST   | Create favorite                      | User Session   | User preferences                |
+| `/favorites`                   | GET    | Get user favorites                   | User Session   | User saved items                |
+| `/favorites/:address`          | GET    | Get favorites of address             | None           | Public favorites                |
+| `/favorites/:id`               | DELETE | Delete favorite                      | User Session   | Favorite management             |
+
+---
+
+## Categories
+Endpoints for managing content categories.
+
+| Endpoint                       | Method | Description                          | Authentication | Importance                      |
+|--------------------------------|--------|--------------------------------------|----------------|---------------------------------|
+| `/categories`                  | GET    | Get categories                       | None           | Content organization            |
+| `/categories`                  | POST   | Update categories                    | Super Admin    | Category management             |
+
+---
+
+## Uploads
+Endpoints for uploading and validating files.
+
+| Endpoint                       | Method | Description                          | Authentication | Importance                      |
+|--------------------------------|--------|--------------------------------------|----------------|---------------------------------|
+| `/upload/validate`             | GET    | Validate media data                  | None           | Content validation              |
+| `/upload`                      | POST   | Upload file                          | None           | File upload                     |
+| `/upload/token`                | GET    | Get upload token                     | None           | Upload authorization            |
+
+---
+
+## Resales & Secondary Market
+Endpoints for managing resale offers and secondary market transactions.
+
+| Endpoint                       | Method | Description                          | Authentication | Importance                      |
+|--------------------------------|--------|--------------------------------------|----------------|---------------------------------|
+| `/resales/open`                | GET    | Get open resales                     | None           | Secondary market discovery      |
+| `/resales/create`              | POST   | Create resale offer                  | User Session   | Secondary market listing        |
+| `/resales/:id`                 | PATCH  | Update resale offer                  | User Session   | Offer management                |
+| `/resales/:id`                 | DELETE | Delete resale offer                  | User Session   | Offer removal                   |
+| `/resales/:id/purchase`        | POST   | Generate purchase request            | User Session   | Secondary market purchase       |
+
+---
+
+## Offers
+Endpoints for managing offers across the platform.
+
+| Endpoint                       | Method | Description                          | Authentication | Importance                      |
+|--------------------------------|--------|--------------------------------------|----------------|---------------------------------|
+| `/offers`                      | GET    | Get all offers                       | None           | Offer discovery                 |
+| `/offers/:id`                  | PATCH  | Update offer data                    | Admin          | Offer management                |
+
+---
