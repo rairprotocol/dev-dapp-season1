@@ -30,3 +30,7 @@ Congratulations! You have just created your first issue and are officially enter
 
 ## Recommended Reading 
 [GitHub Docs - Creating an Issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue)
+
+## Result
+
+If you do this task correctly to will earn label "Entered"
