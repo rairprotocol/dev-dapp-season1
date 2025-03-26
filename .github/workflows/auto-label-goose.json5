@@ -1,0 +1,16 @@
+{
+  labelsSynonyms: {
+    'Entered': ['Submit an issue that follows the guidelines'],
+    'EVM Deploy': ['My RAIR20 Etherscan link is'],
+    'Giveaway Entered': ['sign me up for the raffle','I want some DevDapp swag'],
+    'Akash Deployed': ['ingress.hurricane.akash.pub','provider.hurricane.akash.pub'],
+    'Completed Profile': ['devdapp.com/'],
+    'Modified Dapp': ['https://eth-mainnet.g.alchemy.com'],
+    'Sponsored - Akash': ['I deployed on Akash! My URI is'],
+    'Sponsored - ETHDome': ['Im going to ETHDenver'],
+    'Sponsored - HackIndia': ['Im with HackIndia']
+  },
+  ignoreComments: true,
+  includeTitle: false,
+  failoverLabels: ['Unresolved']
+}
