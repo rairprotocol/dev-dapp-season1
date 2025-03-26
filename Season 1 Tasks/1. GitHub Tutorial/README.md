@@ -1,4 +1,7 @@
 ## 1. GitHub Tutorial
+Label Awarded: Entered\
+Sponsor: None
+
 This initial task is for those who are new to GitHub.\
 \
 We use GitHub issues to track your progress so it is important to learn how to create one. Issues are how you to plan, discuss, and track work in GitHub, so you will be doing this quite often when developing on an Open-Source project. In this first task all we are requesting is for you to create a new issue and copy-paste a block of text which we provide you.
