@@ -1,6 +1,4 @@
 ## 2. Merch Giveaway
-Label Awarded: "Giveaway Entered" or "Raffle Entered"\
-Sponsor: "EthDome" or "HackIndia"
 
 This year we are a very proud sponsor of the [ETHDome](https://ethdo.me/) at [ETHDenver](https://www.ethdenver.com/), and [HackIndia](https://hackindia.xyz/), India's Biggest Web3 & AI hackathon series. In celebration of this tremendous honor, we are going to be giving away free DevDapp merch to users who complete this task.
 
@@ -46,3 +44,7 @@ Upon completion, your task will be validated and if it is correct, you will be a
 ## Recommended Reading 
 [ETHDome](https://ethdo.me/)
 [HackIndia](https://hackindia.xyz/)
+
+## Labels
+Label Awarded: "Giveaway Entered" or "Raffle Entered"\
+Sponsor: "EthDome" or "HackIndia"
