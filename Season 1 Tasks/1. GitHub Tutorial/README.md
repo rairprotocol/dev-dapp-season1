@@ -33,5 +33,5 @@ Congratulations! You have just created your first issue and are officially enter
 [GitHub Docs - Creating an Issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue)
 
 ## Labels
-Label Awarded: Entered\
+Label Awarded: "Entered"\
 Sponsor: None
