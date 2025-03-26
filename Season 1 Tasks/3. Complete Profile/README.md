@@ -48,3 +48,7 @@ My Profile URL is: https://devdapp.com/0x3c24d1f91f588e0341c0f76d7fd78712a1c978a
 Upon completion, your task will be validated and if it is correct, you will be assigned the "Completed Profile" label. If there is an issue, you will see the "Unresolved" label, this means there is a problem that needs to be corrected. Edit your issue and follow the guidelines more closely until you receive your "Completed Profile" label. Do not create multiple issues for the same task. If you dont see your issue, it means it has been validated and closed. Verify this by setting the sort settings to show closed issues.
 
 You did it! Now that your profile is set up, you can proceed to the next task! The difficulty will start to ramp up a bit from here on but you'll learn some really cool stuff so keep learning and keep earning!
+
+## Labels
+Label Awarded: "Completed Profile"\
+Sponsor: None
