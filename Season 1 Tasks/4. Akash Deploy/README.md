@@ -77,3 +77,6 @@ Congratulations! You now know how to deploy on Akash! This was just a taste of t
 ## Recommended Reading 
 [Akash Docs](https://akash.network/docs/)
 
+## Labels
+Label Awarded: "Akash Deployed"\
+Sponsor: "Akash"
