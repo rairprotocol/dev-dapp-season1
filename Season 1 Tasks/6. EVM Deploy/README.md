@@ -113,3 +113,6 @@ Congratulations! Continue with the next task to earn levels and climb the leader
 [Juan's Hardhat Guide for Deploying Smart Contracts](https://github.com/rairprotocol/rair-solidity/blob/main/GUIDE.MD)\
 [Ethereum Virtual Machine (EVM)](https://ethereum.org/en/developers/docs/evm/)
 
+## Labels
+Label Awarded: "EVM Deploy"\
+Sponsor: None
