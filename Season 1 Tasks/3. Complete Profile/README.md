@@ -42,7 +42,7 @@ Setting up your profile is easy, you just add your email and a profile pic, as w
 14. Add a title to your issue. In this case your title should read "3. Complete Profile"
 15. Include a screenshot of your comlpeted profile, and a link to your DevDapp profile (Like the example below).
 ```
-My Profile URL is: https://devdapp.com/0x3c24d1f91f588e0341c0f76d7fd78712a1c978aa
+My Profile URL is: [URL]
 ```
 
 Upon completion, your task will be validated and if it is correct, you will be assigned the "Completed Profile" label. If there is an issue, you will see the "Unresolved" label, this means there is a problem that needs to be corrected. Edit your issue and follow the guidelines more closely until you receive your "Completed Profile" label. Do not create multiple issues for the same task. If you dont see your issue, it means it has been validated and closed. Verify this by setting the sort settings to show closed issues.
