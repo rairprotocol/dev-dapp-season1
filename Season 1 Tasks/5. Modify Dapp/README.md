@@ -1,16 +1,14 @@
 ## 5. Modify Dapp
-The ultimate goal of this season is for you to deploy your own working Dapp by utilizing our Open-Source RAIR application. RAIR comes pre-built with a ton of cool features including EVM support, custom Smart Contracts, NFT minting and marketplace capabilities, Streaming video with built-in NFT DRM protection, and more! We have designed DevDapp to help you learn and understand how to get your own Dapp up and running as easily as possible so you can focus on making something unique, without having to do all the heavy lifting. Don't let that discourage you from going nuts though. Because we are Open-Source, you can modify the code in any way you like. The sky is the limit!
-
-This task will teach you how to get your own RAIR deployment running on localhost(your machine). You'll learn how to clone the RAIR source code, modify the environment variables to change the RPC provider, build and deploy RAIR locally using Docker, and finally you'll see it all in action in your browser. 
+Deploy your own working Dapp using RAIR’s open-source application. RAIR includes EVM support, NFT minting, smart contracts, and streaming video with NFT DRM protection. DevDapp makes deployment easy while allowing full customization.
 
 ## Pre-Configuration
 ### 1. Docker
-RAIR is made up of multiple micro-services which are functionally separated from each other but which communicate together to create the full deployment. We use Docker to build the source code into "Containers", which you can think of as a single unit of software which contains all the code, dependencies, etc needed for that unit to function between different systems. You'll need to install Docker-Compose which is included with Docker-Desktop which you can get for free [here](https://www.docker.com/products/docker-desktop/).
+Install [Docker](https://www.docker.com/products/docker-desktop/) for containerized RAIR services.
 
 <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/5.%20Modify%20Dapp/1.png" width="25%"/>
 
 ### 2. Alchemy
-Once you have Docker installed you'll next need a free Alchemy account to have access to your own RPC node. RPC nodes allow communication between a Blockchain and the internet since they rely on different protocols to work. Alchemy provides a limited, but free RPC node for new users so we are going to use this node in this task. Head over to [Alchemy](https://alchemy.com) and sign up to get access to the dashboard. Once in the dashboard:
+Create a free account on [Alchemy](https://alchemy.com) and sign up to get access to the dashboard. Once in the dashboard:
 
 1. Locate "Apps" in the sidebar.
 
@@ -31,14 +29,13 @@ Once you have Docker installed you'll next need a free Alchemy account to have a
 <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/5.%20Modify%20Dapp/14.png" width="25%"/><img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/5.%20Modify%20Dapp/15.png" width="50%"/>
 
 ### 3. Metamask
-To connect to the blockchain and verify your deployment, you're gonna need Metamask. Metamask is a Web3 wallet that you use to make signatures on chain. It's also the easiest way to login to RAIR so go ahead and install that in your browser as an add-on. Make a new wallet if you dont already have one.
+Install Metamask for blockchain interactions.
 
 ### 4. VSCode
-If you already have a development environment of your own you can skip this step, but for those who dont you're gonna want to install an IDE(Integrated development environment) on your machine. IDEs are super helpful when working on large projects. They help you keep organized and provide a lot of functionality that will help in writing code easier. We recommend [VSCode](https://code.visualstudio.com/).
+Use [VSCode](https://code.visualstudio.com/) as your development environment.
 
 ### 5. Clone RAIR
-Last but not least, you need the RAIR source code. Head to the [RAIR-Dapp](https://github.com/rairprotocol/rair-dapp) repository and download the code. There are many ways to do this but for the sake of simplicity we're just going to download the zip file to our machine, but you can also use git if you prefer (in the directory off your choice run ```gh repo clone rairprotocol/rair-dapp```). In your IDE, open the folder ```RAIR-Dapp``` (or whatever you named the file) wherever you extracted it and youll see all the files. 
-
+Download the [RAIR-Dapp](https://github.com/rairprotocol/rair-dapp) repository. In your IDE, run ```gh repo clone rairprotocol/rair-dapp```). 
 <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/5.%20Modify%20Dapp/2.png" width="50%"/><img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/5.%20Modify%20Dapp/3.png" width="25%"/>
 
 ### 6. Change Working Branch
@@ -90,20 +87,23 @@ Deploy RAIR
 
 13. Pat yourself on the back.
 14. Take a drink of water.
-15. Now... There's still a task to finish if you want to earn your levels in DevDapp!
-16. Navigate to the [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab in the dev-dapp-season1 repository
+15. Now... There's still a task to finish if you want to earn levels!
+16. Go to [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab in the dev-dapp-season1 repository
 17. Click "New Issue" (the green button).
 18. Add a title to your issue. In this case your title should read "5. Modify Dapp"
 19. Add a screenshot of your logged in wallet on the frontend.
 20. Finally copy-paste the text below and replace [RPC Address] with the address you recieved from Alchemy.
+21. Click "Create" (the green button)
+
+## Example Body Text
 ```
 I deployed RAIR successfully. My Alchemy RPC address is [RPC Address].
 ```
-5. Click "Create" (the green button)
 
-Upon completion, your task will be validated and if it is correct, you will be assigned the "Modified Dapp" label. If there is an issue, you will see the "Unresolved" label, this means there is a problem that needs to be corrected. Edit your issue and follow the guidelines more closely until you receive your "Modified Dapp" label. Do not create multiple issues for the same task. If you dont see your issue, it means it has been validated and closed. Verify this by setting the sort settings to show closed issues.
+## Completion
+Once validated, you’ll receive the "Modified Dapp" label. If issues arise, update your submission accordingly. Do not create multiple issues for the same task. If you dont see your issue, it means it has been validated and closed. Verify this by setting the sort settings to show closed issues.
 
-Congratulations! You have just successfully deployed your ownn modified RAIR Dapp! Feel free to poke around and see what interests you. Continue with the next task to earn levels and climb the leaderboard to earn your share of the rewards!
+Continue with the next task to earn levels and climb the leaderboard to earn your share of the rewards!
 
 ## Recommended Reading 
 [Docker - What is a Container?](https://www.docker.com/resources/what-container/)
