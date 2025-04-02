@@ -1,15 +1,17 @@
 ## 1. GitHub Tutorial
 
-This initial task is for those who are new to GitHub.\
-\
-We use GitHub issues to track your progress so it is important to learn how to create one. Issues are how you to plan, discuss, and track work in GitHub, so you will be doing this quite often when developing on an Open-Source project. In this first task all we are requesting is for you to create a new issue and copy-paste a block of text which we provide you.
+New to GitHub? Learn to create an issue.
+
+GitHub issues track progress, plan work, and discuss tasks. You’ll use them often in Open-Source projects. For this task, create an issue and paste the provided text.
 
 ## Steps
-1. Navigate to the [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab in the dev-dapp-season1 repository
-2. Click "New Issue" (the green button).
-3. Add a title to your issue. In this case your title should read "1. Github Tutorial"
-4. Read first, then copy-paste the text below in the body of your new issue.
+1. Go to the Issues tab in dev-dapp-season1.
+2. Click "New Issue" (green button).
+3. Title it "1. Github Tutorial".
+4. Copy-paste the text below into the body.
+5. Click "Create" (green button).
 
+## Example Issue Body
 ```
 I agree to the rules - let's play!
 
@@ -23,11 +25,10 @@ This first task will introduce you to our game mechanics
 
 4. Points = Real $$ including cash, partner tokens and our token (RAIR) at the end of the season
 ```
-5. Click "Create" (the green button)
 
-Upon completion, your task will be validated and if it is correct, you will be assigned the "Entered" label. If there is an issue, you will see the "Unresolved" label, this means there is a problem that needs to be corrected. Edit your issue and follow the guidelines more closely until you receive your "Entered" label. Do not create multiple issues for the same task. If you dont see your issue, it means it has been validated and closed. Verify this by setting the sort settings to show closed issues.
+Once done, admins validate your task. If correct, you get the "Entered" label. If there's an issue, you get "Unresolved"—edit your issue until corrected. Do not submit multiple issues. If your issue disappears, it was validated and closed. Sort by closed issues to check.
 
-Congratulations! You have just created your first issue and are officially entered into DevDapp. Continue with the next task to earn levels and climb the leaderboard to earn your share of the rewards!
+Congrats! You’ve created your first issue and joined DevDapp. Complete more tasks to level up and earn rewards!
 
 ## Recommended Reading 
 [GitHub Docs - Creating an Issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue)
