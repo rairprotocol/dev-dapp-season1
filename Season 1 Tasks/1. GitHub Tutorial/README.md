@@ -26,6 +26,7 @@ This first task will introduce you to our game mechanics
 4. Points = Real $$ including cash, partner tokens and our token (RAIR) at the end of the season
 ```
 
+## Completion
 Once done, admins validate your task. If correct, you get the "Entered" label. If there's an issue, you get "Unresolved"—edit your issue until corrected. Do not submit multiple issues. If your issue disappears, it was validated and closed. Sort by closed issues to check.
 
 Congrats! You’ve created your first issue and joined DevDapp. Complete more tasks to level up and earn rewards!
