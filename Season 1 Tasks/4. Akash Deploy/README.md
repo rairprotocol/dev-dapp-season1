@@ -57,11 +57,11 @@ For this task, we'll only deploy ``RAIR-front``.
 19. Go to [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab.
 20. Click "New Issue" (green button).
 21. Title to your issue "4. Akash Deploy".
-22. Paste the example issue text in the body, replacing [Paste URI here] with your copied URI:
-23. Click "Create" (the green button)
+22. Paste the following in the body, replacing [Paste URI here] with your copied URI:
+23. Click "Create" (green button)
 24. After you have been verified, you can terminate your deployment since its no good when its not functional. On the navigation bar click "Deployments"
    <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/24.png" width="25%"/>
-25. You'll see your new deployment. On the far right click "..." and then close your deployment. 
+25. Close your deployment via "Deployments" > "..." > Close Deployment.
    <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/4.%20Akash%20Deploy/25.png" width="75%"/>
 
 ## Example Issue Body
