@@ -23,12 +23,6 @@ jobs:
               with:
                   fetch-depth: 0
             
-            - name: Pull latest instructions file
-              run: |
-                 cd $HOME/devdapp-bot
-                 git stash
-                 git pull https://sarora180673:${{ secrets.PAT }}@github.com/DevDappcom/devdapp-bot.git
-                 cat $HOME/devdapp-bot/instructions.txt
 
             - name: Run Goose with github extension
               run: |
