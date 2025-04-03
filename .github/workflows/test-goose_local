@@ -1,0 +1,36 @@
+name: Goose_test
+on:
+   issues:
+      types: ['edited']
+
+permissions:
+   contents: write
+   pull-requests: write
+   issues: write
+
+env:
+   ISSUE_NUMBER: ${{ github.event.issue.number }}
+   PR_NUMBER: ${{ github.event.pull_request.number }}
+   GH_TOKEN: ${{ github.token }}
+   REPOSITORY: ${{ github.repository }}
+
+jobs:
+   goose-comment:
+      runs-on: self-hosted
+      steps:
+            - name: Check out repository
+              uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0
+            
+            - name: Pull latest instructions file
+              run: |
+                 cd $HOME/devdapp-bot
+                 git stash
+                 git pull https://sarora180673:${{ secrets.PAT }}@github.com/DevDappcom/devdapp-bot.git
+                 cat $HOME/devdapp-bot/instructions.txt
+
+            - name: Run Goose with github extension
+              run: |
+                  . ~/.bashrc
+                  goose run --with-extension "GITHUB_PERSONAL_ACCESS_TOKEN=${{ secrets.PAT }} npx -y @modelcontextprotocol/server-github" --instructions $HOME/devdapp-bot/instructions.txt
