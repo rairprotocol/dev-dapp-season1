@@ -1,4 +1,4 @@
-name: Labeling new issue
+sname: Labeling new issue
 on:
   issues:
     types: ['opened','edited']
