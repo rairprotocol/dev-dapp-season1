@@ -1,0 +1,38 @@
+name: Label Issue
+on:
+   issues:
+      types: ['opened','edited']
+
+permissions:
+   contents: write
+   pull-requests: write
+   issues: write
+
+env:
+   ISSUE_NUMBER: ${{ github.event.issue.number }}
+   PR_NUMBER: ${{ github.event.pull_request.number }}
+   GH_TOKEN: ${{ github.token }}
+   REPOSITORY: ${{ github.repository }}
+
+jobs:
+   auto-label:
+      runs-on: self-hosted
+      steps:
+            - name: Check out repository
+              uses: actions/checkout@v4
+              with:
+                sparse-checkout: |
+                  .github/workflows/
+                sparse-checkout-cone-mode: false
+            
+            - name: Pull latest instructions file
+              run: |
+                 cd $HOME/devdapp-bot
+                 git stash
+                 git pull https://sarora180673:${{ secrets.PAT }}@github.com/DevDappcom/devdapp-bot.git
+                 cat $HOME/devdapp-bot/instruction-file/auto_label.md
+
+            - name: Run Goose with github extension
+              run: |
+                  . ~/.bashrc
+                  goose run --with-extension "GITHUB_PERSONAL_ACCESS_TOKEN=${{ secrets.PAT }} npx -y @modelcontextprotocol/server-github" --instructions $HOME/devdapp-bot/instruction-file/auto_label.md
