@@ -37,5 +37,7 @@ jobs:
               run: |
                   sudo -u goose bash -c '. ~/.bashrc'
                   printenv
-                  export RUST_BACKTRACE=1
+                  dbus-daemon --session --config-file=~/.dbus/session.conf --nofork --nopidfile &
+                  sleep 1
+                  export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
                   sudo -u goose bash -c /home/goose/.local/bin/goose run --with-extension "GITHUB_PERSONAL_ACCESS_TOKEN=${{ secrets.PAT }} npx -y @modelcontextprotocol/server-github" --instructions $HOME/devdapp-bot/instruction-file/auto_label.md
