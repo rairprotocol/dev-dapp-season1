@@ -27,6 +27,7 @@ jobs:
             
             - name: Pull latest instructions file
               run: |
+                 su goose
                  cd $HOME/devdapp-bot
                  export GH_TOKEN=${{ github.token }}
                  git stash
