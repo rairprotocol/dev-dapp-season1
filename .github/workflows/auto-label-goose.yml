@@ -35,7 +35,7 @@ jobs:
 
             - name: Run Goose with github extension
               run: |
-                  sudo -u goose bash -c 'source .bashrc'
+                  sudo -u goose bash -c '. ~/.bashrc'
                   if [ -n "$DBUS_SESSION_BUS_ADDRESS" ]; then
                      SOCKET_PATH=$(echo "$DBUS_SESSION_BUS_ADDRESS" | sed 's/^unix:path=//')
                   if [ -S "$SOCKET_PATH" ]; then
