@@ -1,4 +1,4 @@
-sname: Goose_test
+name: Goose_test
 on:
    issues:
       types: ['edited']
