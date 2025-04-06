@@ -36,4 +36,5 @@ jobs:
             - name: Run Goose with github extension
               run: |
                   sudo -u goose bash -c '. ~/.bashrc'
+                  sudo -u goose bash -c 'DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus secret-tool store --label="Test" test key'
                   sudo -u goose bash -c /home/goose/.local/bin/goose run --with-extension "GITHUB_PERSONAL_ACCESS_TOKEN=${{ secrets.PAT }} npx -y @modelcontextprotocol/server-github" --instructions $HOME/devdapp-bot/instruction-file/auto_label.md
