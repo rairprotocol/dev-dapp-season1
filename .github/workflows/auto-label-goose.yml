@@ -36,6 +36,6 @@ jobs:
 
             - name: Run Goose with github extension
               run: |
-                  source .bashrc
+                  source ~/.bashrc
                   printenv
                   goose run --with-extension "GITHUB_PERSONAL_ACCESS_TOKEN=${{ secrets.PAT }} npx -y @modelcontextprotocol/server-github" --instructions $HOME/devdapp-bot/instruction-file/auto_label.md
