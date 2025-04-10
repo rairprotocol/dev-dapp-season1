@@ -1,7 +1,7 @@
 name: Goose_test
 on:
    issues:
-      types: ['edited']
+      types: ['opened','edited']
 
 permissions:
    contents: write
@@ -13,6 +13,7 @@ env:
    PR_NUMBER: ${{ github.event.pull_request.number }}
    GH_TOKEN: ${{ github.token }}
    REPOSITORY: ${{ github.repository }}
+   OPEN_API_KEY: ${{ secrets.OPEN_API_KEY }}
 
 jobs:
    goose-comment:
@@ -26,7 +27,5 @@ jobs:
 
             - name: Run Goose with github extension
               run: |
-                  echo $GROQ_API_KEY
                   source ~/.bashrc
-                  echo $GROQ_API_KEY
-                  goose run --with-extension "GITHUB_PERSONAL_ACCESS_TOKEN=${{ secrets.PAT }} npx -y @modelcontextprotocol/server-github" --instructions $HOME/devdapp-bot/instructions.txt
+                  goose run --with-extension "GITHUB_PERSONAL_ACCESS_TOKEN=${{ secrets.PAT }} npx -y @modelcontextprotocol/server-github" --instructions $HOME/devdapp-bot/instruction-file/auto_label.md
