@@ -183,3 +183,7 @@ Happy coding, and let’s make the internet a little more awesome together!
 - **Resources**: Included general resources (e.g., Tailwind, Three.js) to support diverse project ideas.
 
 This version balances structure with flexibility, encouraging students to explore while ensuring they can complete the task successfully. Let me know if you’d like further tweaks!
+
+## Labels
+Label Awarded: "Vibe Dapp"
+Sponsor: None
