@@ -1,4 +1,4 @@
-## 6. EVM Deploy
+## EVM Deploy
 Ethereum Virtual Machine (EVM) is a distributed state machine which allows for the execution of arbitrary code via Smart Contracts. Smart contracts are simply chunks of code deployed to a specific address where they can be called on to execute functions for a user who pays a transaction fee. Very cool stuff.
 
 RAIR comes with built-in Diamond Smart Contracts. What's a Diamond Smart Contract you ask? It's akin to a modular engine. This design allows for seamless upgrades and maintenance without overhauling the entire system. Given that once a contract has been deployed, it cannot ever be changed, Diamond archetecture allows us to graft new components and features to an already deployed contract, expanding its capabilities while maintaining its persistence.
