@@ -1,4 +1,4 @@
-## 5. Modify Dapp
+## Modify Dapp
 Deploy your own working Dapp using RAIR’s open-source application. RAIR includes EVM support, NFT minting, smart contracts, and streaming video with NFT DRM protection. DevDapp makes deployment easy while allowing full customization.
 
 ## Pre-Configuration

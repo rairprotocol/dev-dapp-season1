@@ -1,4 +1,4 @@
-## 1. GitHub Tutorial
+## GitHub Tutorial
 
 New to GitHub? Learn to create an issue.
 

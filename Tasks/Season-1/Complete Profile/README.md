@@ -1,4 +1,4 @@
-## 3. Complete Profile
+## Complete Profile
 Head to  [DevDapp.com](https://devdapp.com) to set up your profile. You'll log in, add an email, profile pic, and (optionally) list experience and references—think of it as your DevDapp resume.
 
 ## Steps
@@ -37,8 +37,8 @@ Head to  [DevDapp.com](https://devdapp.com) to set up your profile. You'll log i
 11. That's it! Now you just need to make an issue to prove your work.
 12. Go to the Issues tab in dev-dapp-season1.
 13. Click "New Issue" (green button).
-14. Title it "3. Complete Profile".
-15. Attach a screenshot of your profile.
+14. Title it "Complete Profile".
+15. Provide the URL to your devdapp.com profile in the example format below.
 16. Click "Create" (green button).
 
 ## Example Issue Body

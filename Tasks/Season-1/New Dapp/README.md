@@ -1,4 +1,4 @@
-## 7. New Dapp
+## New Dapp
 So far, we have introduced you to GitHub, shown you how to deploy RAIR to Akash, installed our own RPC nodes, and deployed our own smart contracts — but why? The goal of DevDapp is to show that you can improve open source and reward contributors for their work. The tasks we developed in this first season are ancillary to this goal. The point is to teach you enough about our project that you become interested in helping us continue its development. This is the goal of any true open-source project.
 
 What makes DevDapp different is our attempt to incentivize developer contributions by offering a tangible reward, rather than relying solely on the inherent kindness implied in the open-source ethos. We want you to have your cake and eat it too. We also want others to learn from our successes and mistakes which is one of the reasons why we open-sourced. 
