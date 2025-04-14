@@ -165,9 +165,6 @@ Your submission will be judged on:
 - [GitHub Docs](https://docs.github.com/) - For Git basics.
 - [Three.js Docs](https://threejs.org/docs/) - If you’re making a game with 3D elements.
 
-## Deadline
-Submit your issue by [insert deadline, e.g., April 18, 2025, 11:59 PM]. Get it in early to show off your skills!
-
 ## You’ve Got This!
 This task is your playground to experiment and create something unique. Whether it’s a game that makes people smile or an app that solves a small problem, you’re learning skills that open doors in tech. Have fun vibe-coding, don’t stress about perfection, and share your project with pride. We can’t wait to see what you build!
 
