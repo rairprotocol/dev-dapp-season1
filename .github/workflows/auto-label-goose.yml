@@ -28,7 +28,6 @@ jobs:
             
             - name: Pull latest instructions file
               run: |
-                 cd $HOME/devdapp-bot
                  export GH_TOKEN=${{ github.token }}
                  git stash
                  git pull https://sarora180673:${{ secrets.PAT }}@github.com/DevDappcom/devdapp-bot.git
