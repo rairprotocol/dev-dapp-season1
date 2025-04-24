@@ -1,27 +1,26 @@
 TL;DR
 
- **Submit Your Work as a GitHub Issue**
+ **Submit Your Work as a GitHub Issue**\
     - Go to the designated GitHub repository for submissions (provided by your instructor, e.g., a `DevDapp` repo).
     - Click **Issues** > **New issue**.
     - Fill out this template to showcase your work:
-      ```markdown
-      **Title**: Astro App Submission - [Your GitHub Username]
+```
+Title: Astro App Submission - [Your GitHub Username]
 
-      **Description**:
-      I vibe-coded a [game/app, e.g., quiz game, to-do list app] using Astro Wind and deployed it to Netlify!
+Description:
+I vibe-coded a [game/app, e.g., quiz game, to-do list app] using Astro Wind and deployed it to Netlify!
 
-      - **Netlify Deployment URL**: [e.g., https://my-cool-app.netlify.app/my-app]
-      - **GitHub Repository**: [e.g., https://github.com/your-username/my-astro-project]
-      - **What I Built**: [Briefly describe, e.g., "A simple quiz game where users answer trivia questions."]
-      - **Notes**: [Anything else, e.g., "It’s a prototype, but I’m excited to improve it!"]
+Netlify Deployment URL: [e.g., https://my-cool-app.netlify.app/my-app]
 
-      Thanks for checking out my project!
-      ```
-    - Submit the issue. Make sure your Netlify URL and GitHub repo are public so your instructor can see your awesome creation.
+GitHub Repository: [e.g., https://github.com/your-username/my-astro-project]
 
+What I Built: [Briefly describe, e.g., "A simple quiz game where users answer trivia questions."]
 
+Notes: [Anything else, e.g., "It’s a prototype, but I’m excited to improve it!"]
 
-
+Thanks for checking out my project!
+```
+      
 # GitHub Task: Vibe-Code and Deploy a Game or App with Astro and Netlify
 
 ## Objective
