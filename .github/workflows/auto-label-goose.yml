@@ -31,7 +31,6 @@ jobs:
                  export GH_TOKEN=${{ github.token }}
                  git stash
                  git clone https://x-access-token:${{ secrets.PAT }}@github.com/DevDappcom/devdapp-bot.git
-                 cat $HOME/devdapp-bot/instruction-file/auto_label.md
 
             - name: Run Goose with github extension
               run: |
