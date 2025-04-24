@@ -5,7 +5,7 @@ TL;DR
     - Click **Issues** > **New issue**.
     - Fill out this template to showcase your work:
       ```markdown
-      **Title**: Vibe Code - [Your GitHub Username]
+      **Title**: Astro App Submission - [Your GitHub Username]
 
       **Description**:
       I vibe-coded a [game/app, e.g., quiz game, to-do list app] using Astro Wind and deployed it to Netlify!
