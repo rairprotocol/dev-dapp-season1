@@ -31,7 +31,7 @@ jobs:
                  pwd
                  export GH_TOKEN=${{ github.token }}
                  git stash
-                 git clone https://x-access-token:${{ secrets.PAT }}@github.com/DevDappcom/devdapp-bot.git
+                 git pull https://x-access-token:${{ secrets.PAT }}@github.com/DevDappcom/devdapp-bot.git
                  ls
 
             - name: Run Goose with github extension
