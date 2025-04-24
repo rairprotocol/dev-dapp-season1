@@ -28,7 +28,7 @@ jobs:
             
             - name: Pull latest instructions file
               run: |
-                 cd ~
+                 pwd
                  export GH_TOKEN=${{ github.token }}
                  git stash
                  git clone https://x-access-token:${{ secrets.PAT }}@github.com/DevDappcom/devdapp-bot.git
