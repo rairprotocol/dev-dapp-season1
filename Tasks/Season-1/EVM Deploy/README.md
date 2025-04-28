@@ -94,7 +94,7 @@ To round things out we just need to create a new issue:
 
 17. Navigate to the [Issues](https://github.com/rairprotocol/dev-dapp-season1/issues) tab in the dev-dapp-season1 repository
 18. Click "New Issue" (the green button).
-19. Add a title to your issue. In this case your title should read "6. EVM Deploy"
+19. Add a title to your issue. In this case your title should read "EVM Deploy"
 20. Copy-paste the text below and add the [Sepolia Etherscan](https://sepolia.etherscan.io) link of your deployed ```RAIR20``` contract.
 
 <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/6.%20EVM%20Deploy/15.png" width="50%"/>
