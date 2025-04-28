@@ -35,8 +35,7 @@ Install Metamask for blockchain interactions.
 Use [VSCode](https://code.visualstudio.com/) as your development environment.
 
 ### 5. Clone RAIR
-Download the [RAIR-Dapp](https://github.com/rairprotocol/rair-dapp) repository. In your IDE, run ```gh repo clone rairprotocol/rair-dapp```). 
-<img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/5.%20Modify%20Dapp/2.png" width="50%"/><img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/5.%20Modify%20Dapp/3.png" width="25%"/>
+Clone the [RAIR-Dapp](https://github.com/rairprotocol/rair-dapp) repository. In your IDE, run ```gh repo clone rairprotocol/rair-dapp```). 
 
 ### 6. Change Working Branch
 We need to change our working branch before we start. This is necessary because later versions of RAIR-Dapp require more memory to build which may exceed your local machine's limits and cause building to fail. 
