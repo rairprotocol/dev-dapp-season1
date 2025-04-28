@@ -22,7 +22,7 @@ In our example, we will be deploying our smart contracts to Sepolia Testnet. Thi
 ### 6. VSCode
 If you already have a development environment of your own you can skip this step, but for those who dont you're gonna want to install an IDE(Integrated development environment) on your machine. IDEs are super helpful when working on large projects. They help you keep organized and provide a lot of functionality that will help in writing code easier. We recommend [VSCode](https://code.visualstudio.com/).
 ### 7. Clone RAIR-Solidity Repository
-Head to [RAIR-Solidity](https://github.com/rairprotocol/rair-solidity) and download or clone(```gh repo clone rairprotocol/rair-solidity)``` the repository to your local machine. 
+Head to [RAIR-Solidity](https://github.com/rairprotocol/rair-solidity) and clone(```gh repo clone rairprotocol/rair-solidity)``` the repository to your local machine. 
 ### 8. Install Node Version Manager(NVM)
 You'll need a specific version of NPM installed to run the test script. In order to do this we'll use [Node Version Manager](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating). If it doesnt run after installing, follow the troubleshooting steps in the documentation.
 
