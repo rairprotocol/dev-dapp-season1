@@ -101,7 +101,7 @@ To round things out we just need to create a new issue:
 <img src="https://github.com/rairprotocol/dev-dapp-season1/blob/main/devdapp-assets/Season%201%20Tasks/6.%20EVM%20Deploy/16.png" width="50%"/>
 
 ```
-My RAIR20 Etherscan link is [https://sepolia.etherscan.io/address/0xAddress].
+My RAIR20 Etherscan link is https://sepolia.etherscan.io/address/[0xAddress].
 ```
 6. Click "Create" (the green button)
 
