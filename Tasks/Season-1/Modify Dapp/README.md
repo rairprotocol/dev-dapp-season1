@@ -96,7 +96,7 @@ Deploy RAIR
 
 ## Example Body Text
 ```
-I deployed RAIR successfully. My Alchemy RPC address is [RPC Address].
+I deployed RAIR successfully. My Alchemy RPC address is https://eth-mainnet.g.alchemy.com/v2/[RPC Address]
 ```
 
 ## Completion
