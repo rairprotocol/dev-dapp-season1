@@ -91,12 +91,12 @@ Deploy RAIR
 17. Click "New Issue" (the green button).
 18. Add a title to your issue. In this case your title should read "5. Modify Dapp"
 19. Add a screenshot of your logged in wallet on the frontend.
-20. Finally copy-paste the example body text and replace [RPC Address] with the address you recieved from Alchemy.
+20. Finally copy-paste the example body text and replace [Project ID] with the value you recieved from Alchemy.
 21. Click "Create" (the green button)
 
 ## Example Body Text
 ```
-I deployed RAIR successfully. My Alchemy RPC address is https://eth-mainnet.g.alchemy.com/v2/[RPC Address]
+I deployed RAIR successfully. My Alchemy RPC address is https://eth-mainnet.g.alchemy.com/v2/[Project ID]
 ```
 
 ## Completion
