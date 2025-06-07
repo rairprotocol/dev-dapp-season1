@@ -1,4 +1,5 @@
 name: Label Issue
+runs-on: [self-hosted, linux, x64, dev-dapp-season1]
 on:
    issues:
       types: ['opened','edited']
