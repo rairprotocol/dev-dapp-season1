@@ -1,5 +1,4 @@
 name: Label Issue
-runs-on: [self-hosted, linux, x64, dev-dapp-season1]
 on:
    issues:
       types: ['opened','edited']
@@ -18,7 +17,7 @@ env:
 
 jobs:
    auto-label:
-      runs-on: self-hosted
+      runs-on: [self-hosted, linux, x64, dev-dapp-season1]
       steps:
             - name: Check out repository
               uses: actions/checkout@v4
