@@ -2,6 +2,8 @@ name: Label Issue
 on:
    issues:
       types: ['opened','edited']
+   pull_request:
+      types: ['opened', 'edited' ]
 
 permissions:
    contents: write
