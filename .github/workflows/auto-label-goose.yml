@@ -37,7 +37,14 @@ jobs:
                  git pull https://x-access-token:${{ secrets.PAT }}@github.com/DevDappcom/devdapp-bot.git
                  ls
 
-            - name: Run Goose with github extension
+            - name: Run Goose with github extension for Issues
+              if: github.event_name != 'pull_request'
               run: |
                   source ~/.bashrc
                   goose run --with-extension "GITHUB_PERSONAL_ACCESS_TOKEN=${{ secrets.PAT_DEVDAPPAI }} npx -y @modelcontextprotocol/server-github" --instructions $HOME/devdapp-bot/instruction-file/auto_label.md
+
+            - name: Run Goose with github extension  for Pull Requests
+              if: github.event_name == 'pull_request'
+              run: |
+                  source ~/.bashrc
+                  goose run --with-builtin "developer,computercontroller,memory" --with-extension "GITHUB_PERSONAL_ACCESS_TOKEN=${{ secrets.PAT_DEVDAPPAI }} npx -y @modelcontextprotocol/server-github" --instructions $HOME/devdapp-bot/instruction-file/auto_label_test2.md
