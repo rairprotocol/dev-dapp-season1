@@ -3,9 +3,9 @@ on:
    issues:
       types: ['opened','edited']
    pull_request:
-      types: ['opened', 'edited' ]
+      types: ['opened', 'edited', 'synchronize' ]
       paths: 
-         - 'README.md'
+         - '**.md'
 
 permissions:
    contents: write
