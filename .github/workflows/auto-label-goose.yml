@@ -1,4 +1,4 @@
-name: Label Issue
+name: Label Issue and Pull Request
 on:
    issues:
       types: ['opened','edited']
